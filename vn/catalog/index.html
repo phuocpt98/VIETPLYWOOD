@@ -1,10 +1,193 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="vi">
 <head>
     <meta charset="UTF-8">
-    <title>Title</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VietPlywood | Nhà sản xuất ván ép tiêu chuẩn xuất khẩu</title>
+
+    <meta name="description"
+          content="VietPlywood – Nhà máy sản xuất ván ép đạt tiêu chuẩn xuất khẩu. Nguồn cung ổn định, đáp ứng đơn hàng lớn cho xây dựng và nội thất.">
+
+    <meta name="robots" content="index, follow">
+    <link rel="canonical" href="https://vietplywood.vn/">
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="VietPlywood – Ván ép tiêu chuẩn xuất khẩu">
+    <meta property="og:description"
+          content="Nhà máy sản xuất ván ép, đáp ứng đơn hàng công nghiệp, giao hàng đúng tiến độ.">
+    <meta property="og:image" content="https://phuocpt98.github.io/VIETPLYWOOD/assets/images/logo.svg">
+    <meta property="og:url" content="https://vietplywood.vn/">
+
+
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/logo.svg">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
+
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Catalog sản phẩm ván ép VIETPLYWOOD",
+            "description": "Catalog giới thiệu các dòng sản phẩm ván ép xuất khẩu của VIETPLYWOOD, bao gồm thông số kỹ thuật và hình ảnh chi tiết.",
+            "url": "https://vietplywood.com/vn/catalog/",
+            "inLanguage": "vi-VN",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "VIETPLYWOOD",
+                "url": "https://vietplywood.com"
+            },
+            "about": {
+                "@type": "Organization",
+                "name": "VIETPLYWOOD",
+                "url": "https://vietplywood.com",
+                "logo": "https://vietplywood.com/assets/images/logo.svg"
+            }
+        }
+    </script>
+
+
+
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/catalog.css">
+
 </head>
 <body>
+
+<nav class="navbar">
+    <div class="container nav-container">
+        <a href="#" class="logo-wrapper logo-font">
+            <img src="../../assets/images/logo.svg" alt="Logo">
+            <span class="brand-name">VietPlywood</span>
+        </a>
+
+        <div class="nav-right-group">
+            <ul class="nav-links" id="navLinks">
+                <li><a href="../../" >Trang chủ</a></li>
+                <li><a href="#" class="active">Catalog</a></li>
+                <li><a href="../products/">Sản phẩm</a></li>
+                <li><a href="../blogs/">Blog</a></li>
+                <li><a href="../about/">Về chúng tôi</a></li>
+                <li><a href="../contact/">Báo giá</a></li>
+            </ul>
+
+            <div class="nav-actions">
+                <div class="custom-select" id="langSelect">
+                    <div class="select-trigger">
+                        <span id="currentLang">VN</span>
+                        <i class="fa-solid fa-chevron-down" style="font-size: 0.5rem;"></i>
+                    </div>
+                    <div class="select-options">
+                        <div class="option" data-value="VN">VN</div>
+                        <div class="option" data-value="EN">EN</div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="menu-toggle" id="menuToggle">
+                <i class="fa-solid fa-bars"></i>
+            </div>
+        </div>
+    </div>
+</nav>
+
+<section class="catalog-bg">
+    <div class="container">
+    <div class="breadcrumb">
+        <a href="../..">Trang chủ</a> / Sản phẩm
+    </div>
+    </div>
+
+    <div class="catalog-slider" id="catalogSlider">
+
+        <button class="slider-btn prev" onclick="prevSlide()">‹</button>
+        <button class="slider-btn next" onclick="nextSlide()">›</button>
+
+        <div class="slider-track" id="sliderTrack"></div>
+
+        <div class="indicator" id="indicator">1 / 14</div>
+
+    </div>
+
+</section>
+
+
+
+<footer class="footer-section">
+    <div class="container">
+        <div class="footer-grid">
+            <div class="footer-column info-col">
+                <div class="footer-logo logo-font">
+                    <img src="../../assets/images/logo.svg" alt="VIETPLYWOOD">
+                    <span class="logo-text">VIETPLYWOOD</span>
+                </div>
+                <p class="company-desc">
+                    Nhà sản xuất ván ép hàng đầu, phục vụ nhu cầu<br>công nghiệp và dân dụng.
+                    <br><br>
+                    Xây dựng uy tín thông qua chất lượng ổn định<br>và hợp tác dài hạn.
+                </p>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Sản phẩm</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Ván ép phủ phim</a></li>
+                    <li><a href="#">Ván ép mặt bintangor</a></li>
+                    <li><a href="#">Ván ép mặt Okoume</a></li>
+                    <li><a href="#">Ván ép mặt trắng</a></li>
+                    <li><a href="#">Ván ép mặt xoan Veneer</a></li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Liên hệ</h4>
+                <ul class="contact-list">
+                    <li>
+                        <i class="fa-solid fa-location-dot"></i>
+                        <span>Khu Liên Đồng, Xã Thanh Sơn,<br>Tỉnh Phú Thọ, Việt Nam</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-phone"></i>
+                        <span>(+84) 916 884 008<br>(+84) 762 012 459</span>
+                    </li>
+                    <li>
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>tmdvvietnam@gmail.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h4 class="footer-title">Giới thiệu công ty</h4>
+                <ul class="footer-links">
+                    <li><a href="#">Về chúng tôi</a></li>
+                </ul>
+            </div>
+        </div>
+
+        <div class="footer-bottom">
+            <p class="copyright">© 2023 PlyMaster B2B Inc. All rights reserved.</p>
+            <div class="footer-social">
+                <a href="https://www.linkedin.com/in/phan-tien-phuoc-a49934321/" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-linkedin"></i>
+                </a>
+                <a href="https://www.facebook.com/profile.php?id=61584549586039" target="_blank" rel="noopener noreferrer">
+                    <i class="fa-brands fa-facebook"></i>
+                </a>
+            </div>
+
+        </div>
+    </div>
+</footer>
+
+
+<script src="../../assets/js/header.js"></script>
+<script src="../../assets/js/catalog.js"></script>
+
 
 </body>
 </html>

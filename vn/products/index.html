@@ -20,7 +20,7 @@
     <meta property="og:url" content="https://vietplywood.vn/">
 
 
-    <link rel="icon" type="image/svg+xml" href="./assets/images/logo.svg">
+    <link rel="icon" type="image/svg+xml" href="../../assets/images/logo.svg">
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -28,412 +28,87 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
+    <script type="application/ld+json">
+        {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Danh mục sản phẩm ván ép VIETPLYWOOD",
+            "description": "Danh mục các dòng ván ép xuất khẩu của VIETPLYWOOD bao gồm ván ép phủ phim, Bintangor, Okoume, mặt trắng và Veneer.",
+            "url": "https://vietplywood.com/vn/products/",
+            "inLanguage": "vi-VN",
+            "isPartOf": {
+                "@type": "WebSite",
+                "name": "VIETPLYWOOD",
+                "url": "https://vietplywood.com"
+            },
+            "mainEntity": {
+                "@type": "ItemList",
+                "itemListOrder": "https://schema.org/ItemListOrderAscending",
+                "numberOfItems": 5,
+                "itemListElement": [
+                    {
+                        "@type": "ListItem",
+                        "position": 1,
+                        "name": "Ván ép phủ phim",
+                        "url": "https://vietplywood.com/vn/products/product_1.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 2,
+                        "name": "Ván ép mặt Bintangor",
+                        "url": "https://vietplywood.com/vn/products/product_2.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 3,
+                        "name": "Ván ép mặt Okoume",
+                        "url": "https://vietplywood.com/vn/products/product_3.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 4,
+                        "name": "Ván ép mặt trắng",
+                        "url": "https://vietplywood.com/vn/products/product_4.html"
+                    },
+                    {
+                        "@type": "ListItem",
+                        "position": 5,
+                        "name": "Ván ép mặt xoan Veneer",
+                        "url": "https://vietplywood.com/vn/products/product_5.html"
+                    }
+                ]
+            },
+            "about": {
+                "@type": "Organization",
+                "name": "VIETPLYWOOD",
+                "logo": "https://vietplywood.com/assets/images/logo.svg"
+            }
+        }
+    </script>
+
+
+
+    <link rel="stylesheet" href="../../assets/css/base.css">
+    <link rel="stylesheet" href="../../assets/css/products.css">
 
-    <link rel="stylesheet" href="./assets/css/base.css">
-    <link rel="stylesheet" href="./assets/css/home.css">
-
-    <!--    <style>-->
-    <!--        /* -&#45;&#45; 1. VARIABLES & RESET -&#45;&#45; */-->
-    <!--        :root {-->
-    <!--            /* Palette theo Figma */-->
-    <!--            &#45;&#45;primary-dark: #513C2E;-->
-    <!--            &#45;&#45;accent-wood: #B1967F;-->
-    <!--            &#45;&#45;text-gray: #666666;      /* About desc */-->
-    <!--            &#45;&#45;text-light-gray: #8C7E74; /* Footer/Span */-->
-    <!--            &#45;&#45;text-sub: #6B7280;       /* Product desc */-->
-    <!--            &#45;&#45;bg-light: #F7F2EE;-->
-    <!--            &#45;&#45;white: #FFFFFF;-->
-
-    <!--            /* Gradients */-->
-    <!--            &#45;&#45;grad-tan: linear-gradient(135deg, #BEA48E 0%, #BCA089 100%);-->
-    <!--            &#45;&#45;grad-dark: linear-gradient(135deg, #513C2E 0%, #3A2B21 100%);-->
-    <!--            &#45;&#45;grad-hero-btn: linear-gradient(88deg, #BEA48E 0%, #9C826D 100%);-->
-    <!--            &#45;&#45;grad-submit: linear-gradient(90deg, #BEA48E 0%, #746456 100%);-->
-    <!--            &#45;&#45;grad-contact-bg: linear-gradient(135deg, #F7F2EE 0%, #E8DACD 100%);-->
-    <!--            &#45;&#45;grad-feature: linear-gradient(180deg, #F7F2EE 0%, #FFFFFF 100%);-->
-
-    <!--            &#45;&#45;btn-radius: 6px;-->
-    <!--            &#45;&#45;transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);-->
-    <!--        }-->
-
-    <!--        * { margin: 0; padding: 0; box-sizing: border-box; list-style: none; }-->
-    <!--        body {-->
-    <!--            font-family: 'Inter', sans-serif;-->
-    <!--            line-height: 1.6;-->
-    <!--            background-color: var(&#45;&#45;white);-->
-    <!--            color: var(&#45;&#45;primary-dark);-->
-    <!--            scroll-behavior: smooth;-->
-    <!--        }-->
-    <!--        a { text-decoration: none; color: inherit; }-->
-    <!--        .container { max-width: 85%; margin: 0 auto; padding: 0 20px; }-->
-
-    <!--        /* -&#45;&#45; 2. NAVBAR SECTION -&#45;&#45; */-->
-    <!--        .navbar {-->
-    <!--            background-color: var(&#45;&#45;white);-->
-    <!--            padding: 12px 0;-->
-    <!--            position: sticky;-->
-    <!--            top: 0;-->
-    <!--            z-index: 1000;-->
-    <!--            box-shadow: 0 4px 15px rgba(0,0,0,0.03);-->
-    <!--        }-->
-    <!--        .nav-container { display: flex; align-items: center; justify-content: space-between; max-width: 95%;  }-->
-    <!--        .logo-wrapper { display: flex; align-items: center; gap: 10px; flex-shrink: 0;}-->
-    <!--        .logo-font { font-family: 'Bungee', sans-serif;}-->
-    <!--        .logo-wrapper img { height: 35px; width: auto; display: block; }-->
-
-    <!--        .brand-name {-->
-    <!--            font-size: 1.2rem;-->
-    <!--            font-weight: 800;-->
-    <!--            color: var(&#45;&#45;primary-dark);-->
-    <!--            text-transform: uppercase;-->
-    <!--        }-->
-
-    <!--        .nav-right-group { display: flex; align-items: center; gap: 10px; }-->
-    <!--        .nav-links { display: flex; gap: 5px; margin-right: 10px; }-->
-    <!--        .nav-links li a {-->
-    <!--            padding: 8px 16px;-->
-    <!--            font-size: 0.85rem;-->
-    <!--            font-weight: 600;-->
-    <!--            color: var(&#45;&#45;primary-dark);-->
-    <!--            border-radius: var(&#45;&#45;btn-radius);-->
-    <!--            transition: var(&#45;&#45;transition);-->
-    <!--        }-->
-    <!--        .nav-links li a:hover, .nav-links li a.active {-->
-    <!--            background: var(&#45;&#45;primary-dark);-->
-    <!--            color: var(&#45;&#45;white) !important;-->
-    <!--        }-->
-
-    <!--        .menu-toggle { display: none; font-size: 1.3rem; color: var(&#45;&#45;primary-dark); cursor: pointer; padding: 5px; }-->
-
-    <!--        /* Language Selector */-->
-    <!--        .custom-select { position: relative; width: 60px; cursor: pointer; user-select: none; }-->
-    <!--        .select-trigger { padding: 6px 10px; background: #F5F5F5; border-radius: var(&#45;&#45;btn-radius); font-size: 0.75rem; font-weight: 700; display: flex; align-items: center; justify-content: space-between; }-->
-    <!--        .select-options { position: absolute; top: calc(100% + 10px); right: 0; background: var(&#45;&#45;white); border-radius: var(&#45;&#45;btn-radius); box-shadow: 0 10px 25px rgba(0,0,0,0.1); overflow: hidden; opacity: 0; visibility: hidden; transform: translateY(-10px); transition: var(&#45;&#45;transition); min-width: 70px; }-->
-    <!--        .custom-select.open .select-options { opacity: 1; visibility: visible; transform: translateY(0); }-->
-    <!--        .option { padding: 8px; font-size: 0.75rem; text-align: center; font-weight: 600; }-->
-    <!--        .option:hover { background: var(&#45;&#45;primary-dark); color: var(&#45;&#45;white); }-->
-
-    <!--        /* -&#45;&#45; 3. HERO SECTION -&#45;&#45; */-->
-    <!--        .hero-wrapper { padding: 20px 0 60px 0;-->
-    <!--            position: relative; width: 100%; height: 700px; overflow: hidden;-->
-    <!--            display: flex; align-items: center; justify-content: center; text-align: center;-->
-    <!--            background-image:   linear-gradient(-->
-    <!--                    90deg,-->
-    <!--                    rgba(0,0,0,0.35) 0%,-->
-    <!--                    rgba(0,0,0,0.05) 50%,-->
-    <!--                    rgba(0,0,0,0.35) 100%-->
-    <!--            ),-->
-    <!--            linear-gradient(-->
-    <!--                    145deg,-->
-    <!--                    rgba(255,255,255,0.2),-->
-    <!--                    rgba(0,0,0,0.5)-->
-    <!--            ),-->
-    <!--            url('./assets/images/index_background.png');-->
-    <!--            background-size: cover;-->
-
-    <!--        }-->
-    <!--        .hero-banner {-->
-
-
-    <!--        }-->
-    <!--        .hero-content { max-width: 850px; color: var(&#45;&#45;white); z-index: 2; padding: 0 20px; }-->
-
-    <!--        .hero-content h1 {-->
-    <!--            font-size: clamp(2.2rem, 5vw, 3.8rem);-->
-    <!--            font-weight: 800;-->
-    <!--            line-height: 1.1;-->
-    <!--            margin-bottom: 20px;-->
-    <!--            color: var(&#45;&#45;white);-->
-    <!--        }-->
-    <!--        .hero-content p {-->
-    <!--            font-size: 1.1rem;-->
-    <!--            margin-bottom: 40px;-->
-    <!--            font-weight: 400;-->
-    <!--            color: var(&#45;&#45;white);-->
-    <!--            opacity: 0.95;-->
-    <!--        }-->
-
-    <!--        .hero-btns { display: flex; gap: 20px; justify-content: center; align-items: center; }-->
-
-    <!--        .btn-hero {-->
-    <!--            padding: 16px 36px;-->
-    <!--            border-radius: var(&#45;&#45;btn-radius);-->
-    <!--            font-size: 0.95rem;-->
-    <!--            font-weight: 700;-->
-    <!--            transition: var(&#45;&#45;transition);-->
-    <!--            display: inline-block;-->
-    <!--            border: none;-->
-    <!--            cursor: pointer;-->
-    <!--        }-->
-
-    <!--        .btn-contact-hero {-->
-    <!--            background: rgba(255, 255, 255, 0.15);-->
-    <!--            border: 1px solid rgba(255, 255, 255, 0.4);-->
-    <!--            color: var(&#45;&#45;white);-->
-    <!--            backdrop-filter: blur(5px);-->
-    <!--        }-->
-    <!--        .btn-contact-hero:hover { background: rgba(255, 255, 255, 0.25); transform: translateY(-2px); }-->
-
-    <!--        .btn-catalog-hero {-->
-    <!--            background: var(&#45;&#45;grad-hero-btn);-->
-    <!--            color: var(&#45;&#45;white);-->
-    <!--        }-->
-    <!--        .btn-catalog-hero:hover { transform: translateY(-2px); box-shadow: 0 5px 15px rgba(0,0,0,0.2); }-->
-
-    <!--        /* -&#45;&#45; 4. ABOUT SECTION -&#45;&#45; */-->
-    <!--        .about-section { padding: 120px 0; background-color: var(&#45;&#45;white); overflow: hidden; }-->
-    <!--        .about-container { display: grid; grid-template-columns: 1.2fr 1fr; gap: 80px; align-items: flex-start; }-->
-
-    <!--        /* Bento Grid */-->
-    <!--        .bento-wrapper { display: grid; grid-template-columns: 1fr 1fr; grid-template-rows: 60px 140px 220px; gap: 20px; }-->
-    <!--        .bento-box {-->
-    <!--            border-radius: 20px; padding: 24px; display: flex; flex-direction: column;-->
-    <!--            box-shadow: 0 15px 45px rgba(0,0,0,0.05); transition: var(&#45;&#45;transition);-->
-    <!--            cursor: pointer; position: relative; z-index: 1;-->
-    <!--        }-->
-    <!--        .bento-box:hover { transform: translateY(-10px) scale(1.02); z-index: 10; box-shadow: 0 30px 60px rgba(0,0,0,0.12); }-->
-
-    <!--        .box-large { height: 220px; justify-content: flex-end; }-->
-    <!--        .box-small { height: 140px; justify-content: space-between; }-->
-
-    <!--        /* Grid Alignment */-->
-    <!--        .bento-wrapper .bento-box:nth-child(1) { grid-column: 1; grid-row: 2 / 3; }-->
-    <!--        .bento-wrapper .bento-box:nth-child(2) { grid-column: 2; grid-row: 1 / 3; }-->
-    <!--        .bento-wrapper .bento-box:nth-child(3) { grid-column: 1; grid-row: 3 / 4; }-->
-    <!--        .bento-wrapper .bento-box:nth-child(4) { grid-column: 2; grid-row: 3 / 4; }-->
-
-    <!--        /* Bento Colors */-->
-    <!--        .bento-white { background: #FDFBF9; border: 1px solid #F1EDE9; }-->
-    <!--        .bento-tan { background: var(&#45;&#45;grad-tan); color: var(&#45;&#45;white); }-->
-    <!--        .bento-dark { background: var(&#45;&#45;grad-dark); color: var(&#45;&#45;white); }-->
-
-    <!--        .bento-icon-wrap { width: 45px; height: 45px; margin-bottom: 10px; }-->
-    <!--        .bento-svg { width: 100%; height: 100%; object-fit: contain; }-->
-
-    <!--        .bento-big-text { font-size: 3.2rem; font-weight: 800; color: var(&#45;&#45;white); line-height: 1; margin-bottom: 8px; }-->
-    <!--        .bento-label { font-size: 0.95rem; font-weight: 700; color: #3D2B1F; }-->
-    <!--        .bento-label-small { font-size: 0.85rem; opacity: 0.9; }-->
-
-    <!--        /* About Text */-->
-    <!--        .about-sub { font-size: 0.8rem; font-weight: 700; color: var(&#45;&#45;accent-wood); letter-spacing: 1px; display: block; margin-bottom: 20px; text-transform: uppercase; }-->
-    <!--        .about-title { font-size: 2.2rem; font-weight: 800; color: var(&#45;&#45;primary-dark); margin-bottom: 25px; line-height: 1.1; }-->
-    <!--        .about-desc { color: var(&#45;&#45;text-gray); margin-bottom: 40px; line-height: 1.6; }-->
-
-    <!--        .feature-line { border-left: 2px solid var(&#45;&#45;accent-wood); padding-left: 25px; margin-bottom: 30px; }-->
-    <!--        .feature-line strong { display: block; color: #3D2B1F; margin-bottom: 5px; font-size: 1.1rem; font-weight: 700; }-->
-    <!--        .feature-line p { font-size: 0.8rem; color: var(&#45;&#45;text-light-gray); margin: 0; } /* updated to match span style in prompt */-->
-
-    <!--        .btn-about-more {-->
-    <!--            padding: 15px 35px;-->
-    <!--            background: linear-gradient(135deg, #513C2E 0%, #746456 100%);-->
-    <!--            color: var(&#45;&#45;white) !important;-->
-    <!--            border-radius: 6px; font-weight: 700; display: inline-block; transition: 0.3s;-->
-    <!--        }-->
-    <!--        .btn-about-more:hover { transform: translateY(-3px); box-shadow: 0 10px 20px rgba(81,60,46,0.2); }-->
-
-    <!--        /* -&#45;&#45; 5. PRODUCTS SECTION -&#45;&#45; */-->
-    <!--        .products-section { padding: 80px 0; background-color: #F8F9FA; border-top: 1px solid #E5E7EB; border-bottom: 1px solid #E5E7EB; }-->
-    <!--        .products-header { display: flex; justify-content: space-between; align-items: flex-end; margin-bottom: 50px; }-->
-    <!--        .header-left { max-width: 650px; }-->
-
-    <!--        .section-title { font-size: 2.2rem; font-weight: 800; color: var(&#45;&#45;primary-dark); margin-bottom: 12px; }-->
-    <!--        .section-subtitle { font-size: 0.95rem; color: var(&#45;&#45;text-sub); line-height: 1.6; }-->
-
-    <!--        .view-all-link { font-size: 0.85rem; font-weight: 700; color: var(&#45;&#45;text-sub); display: flex; align-items: center; gap: 8px; transition: var(&#45;&#45;transition); }-->
-    <!--        .view-all-link:hover { color: var(&#45;&#45;primary-dark); gap: 12px; }-->
-
-    <!--        .products-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }-->
-
-    <!--        .product-card {-->
-    <!--            background: var(&#45;&#45;white); border-radius: 16px; overflow: hidden; border: 1px solid #E5E7EB;-->
-    <!--            transition: var(&#45;&#45;transition); display: flex; flex-direction: column; height: 100%;-->
-    <!--        }-->
-    <!--        .product-card:hover { transform: translateY(-10px); box-shadow: 0 20px 40px rgba(0,0,0,0.08); border-color: var(&#45;&#45;accent-wood); }-->
-
-    <!--        .product-img-wrapper { margin: 15px; height: 200px; border-radius: 12px; overflow: hidden; }-->
-    <!--        .product-img-wrapper img { width: 100%; height: 100%; object-fit: cover; }-->
-
-    <!--        .product-content { padding: 0 25px 25px 25px; flex-grow: 1; display: flex; flex-direction: column; }-->
-    <!--        .p-name { font-size: 1.2rem; font-weight: 800; color: var(&#45;&#45;primary-dark); margin-bottom: 10px; }-->
-    <!--        .p-desc { font-size: 0.85rem; color: var(&#45;&#45;text-sub); line-height: 1.5; margin-bottom: 20px; min-height: 4.5em; }-->
-
-    <!--        .p-tags { display: flex; flex-wrap: wrap; gap: 6px; margin-top: auto; }-->
-    <!--        .p-tags span {-->
-    <!--            font-size: 0.75rem; font-weight: 600; color: #4B5563;-->
-    <!--            background: var(&#45;&#45;bg-light); padding: 5px 12px; border-radius: 6px;-->
-    <!--            transition: var(&#45;&#45;transition);-->
-    <!--        }-->
-    <!--        .product-card:hover .p-tags span { background: var(&#45;&#45;primary-dark); color: var(&#45;&#45;white); }-->
-
-    <!--        /* -&#45;&#45; 6. FEATURES SECTION -&#45;&#45; */-->
-    <!--        .features-section { padding: 100px 0; background-color: var(&#45;&#45;white); }-->
-    <!--        .features-header { margin-bottom: 50px; }-->
-    <!--        .features-sub { font-size: 0.8rem; font-weight: 700; color: var(&#45;&#45;accent-wood); letter-spacing: 1.5px; text-transform: uppercase; display: block; margin-bottom: 10px; }-->
-    <!--        .features-title { font-size: 2.4rem; font-weight: 800; color: var(&#45;&#45;primary-dark); }-->
-
-    <!--        .features-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 25px; }-->
-
-    <!--        .feature-card {-->
-    <!--            background: var(&#45;&#45;grad-feature); border-radius: 20px; padding: 45px 35px;-->
-    <!--            display: flex; flex-direction: column; justify-content: space-between;-->
-    <!--            min-height: 320px; border: 1px solid #EAE6E2; transition: var(&#45;&#45;transition);-->
-    <!--        }-->
-    <!--        .feature-card:hover { transform: translateY(-8px); box-shadow: 0 15px 30px rgba(81,60,46,0.08); border-color: var(&#45;&#45;accent-wood); }-->
-
-    <!--        .feature-top p { font-size: 0.95rem; line-height: 1.7; color: #4B5563; }-->
-
-    <!--        .feature-bottom { display: flex; align-items: center; gap: 15px; margin-top: 30px; padding-top: 25px; border-top: 1px solid rgba(81,60,46,0.1); }-->
-    <!--        .feature-icon { width: 44px; height: 44px; flex-shrink: 0; }-->
-    <!--        .feature-icon img { width: 100%; height: 100%; object-fit: contain; }-->
-
-    <!--        .feature-text h4 { font-size: 1.1rem; font-weight: 800; color: var(&#45;&#45;primary-dark); margin-bottom: 4px; }-->
-    <!--        .feature-text span { font-size: 0.8rem; color: var(&#45;&#45;text-light-gray); font-weight: 500; }-->
-
-    <!--        /* -&#45;&#45; 7. COUNTER SECTION -&#45;&#45; */-->
-    <!--        .counter-section {-->
-    <!--            padding: 100px 0; position: relative;-->
-    <!--            background-color: #3d2b1f;-->
-    <!--            background-image: linear-gradient(90deg, rgba(0,0,0,0.45) 0%, rgba(0,0,0,0.1) 50%, rgba(0,0,0,0.45) 100%),-->
-    <!--            url("./assets/images/background_go.png");-->
-    <!--            background-size: cover; background-position: center; color: var(&#45;&#45;white);-->
-    <!--        }-->
-    <!--        .counter-grid { display: grid; grid-template-columns: repeat(4, 1fr); gap: 40px; width: 100%; }-->
-    <!--        .counter-item { display: flex; flex-direction: column; justify-content: center; border-left: 3px solid rgba(196,164,132,0.4); padding-left: 40px; }-->
-    <!--        .counter-content { display: flex; flex-direction: column; align-items: flex-start; gap: 15px; }-->
-    <!--        .counter-icon { width: 32px; height: 32px; }-->
-    <!--        .counter-icon img { width: 100%; height: 100%; object-fit: contain; }-->
-
-    <!--        .counter-number { font-size: 2.6rem; font-weight: 800; margin: 0; line-height: 1; color: var(&#45;&#45;white); }-->
-    <!--        .counter-label { font-size: 0.8rem; font-weight: 600; color: rgba(255,255,255,0.7); text-transform: uppercase; letter-spacing: 0.5px; margin-top: 5px; }-->
-
-    <!--        /* -&#45;&#45; 8. CONTACT SECTION -&#45;&#45; */-->
-    <!--        .contact-section { padding: 100px 0; background-color: var(&#45;&#45;bg-light); }-->
-    <!--        .contact-wrapper { display: flex; background-color: var(&#45;&#45;white); border-radius: 24px; overflow: hidden; box-shadow: 0 10px 30px rgba(81,60,46,0.08); max-width: 1140px; margin: 0 auto; }-->
-
-    <!--        .contact-info-panel { flex: 0 0 45%; background: var(&#45;&#45;grad-contact-bg); padding: 60px; display: flex; align-items: center; }-->
-
-    <!--        .contact-sub { font-size: 0.75rem; font-weight: 700; color: var(&#45;&#45;text-light-gray); letter-spacing: 1px; display: block; margin-bottom: 15px; }-->
-    <!--        .contact-title { font-size: 1.8rem; font-weight: 800; color: var(&#45;&#45;primary-dark); line-height: 1.3; margin-bottom: 20px; }-->
-    <!--        .contact-desc { font-size: 0.9rem; color: var(&#45;&#45;text-sub); line-height: 1.6; margin-bottom: 40px; }-->
-
-    <!--        .method-item { display: flex; gap: 15px; align-items: flex-start; margin-bottom: 25px; }-->
-    <!--        .method-icon { width: 40px; height: 40px; background-color: var(&#45;&#45;white); border-radius: 50%; display: flex; align-items: center; justify-content: center; color: var(&#45;&#45;primary-dark); font-size: 1rem; flex-shrink: 0; }-->
-    <!--        .method-text strong { font-size: 0.95rem; color: var(&#45;&#45;primary-dark); margin-bottom: 4px; display: block; }-->
-    <!--        .method-text span, .method-text div { font-size: 0.85rem; color: var(&#45;&#45;text-sub); }-->
-
-    <!--        .contact-form-panel { flex: 1; padding: 60px; }-->
-    <!--        .quote-form { display: flex; flex-direction: column; gap: 20px; }-->
-    <!--        .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 20px; }-->
-
-    <!--        .form-group label { font-size: 0.85rem; font-weight: 700; color: var(&#45;&#45;primary-dark); margin-bottom: 6px; display: block; }-->
-    <!--        .form-group input, .form-group textarea {-->
-    <!--            width: 100%; padding: 12px 16px; border: 1px solid #EAE6E2; border-radius: 8px;-->
-    <!--            font-size: 0.9rem; background-color: #FDFDFD; font-family: inherit;-->
-    <!--        }-->
-
-    <!--        .btn-submit {-->
-    <!--            margin-top: 10px; background: var(&#45;&#45;grad-submit); color: var(&#45;&#45;white);-->
-    <!--            padding: 15px; border: none; border-radius: 8px; font-size: 1rem;-->
-    <!--            font-weight: 700; cursor: pointer; transition: opacity 0.3s ease;-->
-    <!--        }-->
-    <!--        .btn-submit:hover { opacity: 0.9; }-->
-
-    <!--        /* -&#45;&#45; 9. FOOTER SECTION -&#45;&#45; */-->
-    <!--        .footer-section { padding: 80px 0 30px; background-color: var(&#45;&#45;white); border-top: 1px solid #F0EAE5; }-->
-    <!--        .footer-grid { display: grid; grid-template-columns: 1.5fr 1fr 1fr 1fr; gap: 40px; padding-bottom: 50px; border-bottom: 1px solid #F0EAE5; }-->
-
-    <!--        .footer-logo { display: flex; align-items: center; gap: 10px; margin-bottom: 20px; }-->
-    <!--        .footer-logo img { height: 35px; }-->
-    <!--        .logo-text { font-size: 1.1rem; font-weight: 800; color: var(&#45;&#45;primary-dark); letter-spacing: 0.5px; }-->
-
-    <!--        .company-desc { font-size: 0.85rem; color: var(&#45;&#45;text-light-gray); line-height: 1.6; }-->
-    <!--        .footer-title { font-size: 0.95rem; font-weight: 700; color: var(&#45;&#45;primary-dark); margin-bottom: 25px; }-->
-
-    <!--        .footer-links li, .contact-list li { margin-bottom: 12px; display: flex; align-items: flex-start; }-->
-    <!--        .footer-links a, .contact-list span { text-decoration: none; color: var(&#45;&#45;text-light-gray); font-size: 0.85rem; line-height: 1.5; }-->
-    <!--        .contact-list i { color: var(&#45;&#45;primary-dark); margin-top: 4px; margin-right: 12px; width: 15px; text-align: center; }-->
-
-    <!--        .footer-bottom { display: flex; justify-content: space-between; align-items: center; padding-top: 25px; }-->
-    <!--        .copyright { font-size: 0.75rem; color: #A3968C; }-->
-    <!--        .footer-social { display: flex; gap: 15px; }-->
-    <!--        .footer-social a { color: #A3968C; font-size: 1.1rem; }-->
-
-    <!--        /* -&#45;&#45; 10. TOAST MESSAGE -&#45;&#45; */-->
-    <!--        .toast-message {-->
-    <!--            position: fixed; top: 20px; right: 20px; background: var(&#45;&#45;primary-dark); color: var(&#45;&#45;white);-->
-    <!--            padding: 16px 25px; border-radius: 12px; box-shadow: 0 10px 25px rgba(0,0,0,0.2);-->
-    <!--            display: flex; align-items: center; gap: 12px; z-index: 9999;-->
-    <!--            transform: translateY(-150%); transition: transform 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.275);-->
-    <!--        }-->
-    <!--        .toast-message.show { transform: translateY(0); }-->
-    <!--        .toast-content i { color: #BEA48E; font-size: 1.2rem; }-->
-    <!--        .toast-content span { font-size: 0.9rem; font-weight: 500; }-->
-
-    <!--        /* -&#45;&#45; RESPONSIVE MEDIA QUERIES -&#45;&#45; */-->
-    <!--        @media (max-width: 992px) {-->
-    <!--            .nav-links { display: none; }-->
-    <!--            .menu-toggle { display: block; }-->
-    <!--            .about-container, .contact-wrapper { flex-direction: column; display: flex; }-->
-    <!--            .bento-wrapper { grid-template-rows: auto auto auto; }-->
-    <!--            .box-large, .box-small { height: 180px; }-->
-    <!--            .products-grid, .features-grid { grid-template-columns: repeat(2, 1fr); }-->
-    <!--            .counter-grid { grid-template-columns: repeat(2, 1fr); }-->
-    <!--            .footer-grid { grid-template-columns: 1fr 1fr; }-->
-    <!--            .contact-info-panel { padding: 40px; }-->
-    <!--        }-->
-
-    <!--        @media (max-width: 600px) {-->
-    <!--            /* Mobile Specific Optimization */-->
-    <!--            .hero-content h1 { font-size: 2rem !important; }-->
-    <!--            .hero-btns { flex-direction: column; width: 100%; }-->
-    <!--            .btn-hero { width: 100%; text-align: center; padding: 12px 24px !important; font-size: 0.85rem !important; }-->
-
-    <!--            .bento-big-text { font-size: 2.5rem !important; }-->
-    <!--            .section-title, .about-title, .features-title { font-size: 1.8rem !important; }-->
-
-    <!--            .products-grid, .features-grid, .counter-grid { grid-template-columns: 1fr; }-->
-    <!--            .products-header { flex-direction: column; align-items: flex-start; gap: 15px; }-->
-
-    <!--            .contact-form-panel { padding: 30px 20px; }-->
-    <!--            .form-row { grid-template-columns: 1fr; }-->
-
-    <!--            .footer-grid { grid-template-columns: 1fr; }-->
-    <!--            .footer-bottom { flex-direction: column; gap: 15px; align-items: flex-start; }-->
-
-    <!--            /* Responsive Buttons in other sections */-->
-    <!--            .btn-about-more, .btn-submit {-->
-    <!--                padding: 12px 20px !important;-->
-    <!--                font-size: 0.9rem !important;-->
-    <!--                width: 100%;-->
-    <!--                text-align: center;-->
-    <!--            }-->
-    <!--        }-->
-
-    <!--        /* Nav Mobile Menu */-->
-    <!--        .nav-links.show {-->
-    <!--            display: flex; flex-direction: column; position: absolute;-->
-    <!--            top: 100%; left: 0; right: 0; background: white;-->
-    <!--            padding: 20px; box-shadow: 0 10px 20px rgba(0,0,0,0.1);-->
-    <!--        }-->
-    <!--    </style>-->
 </head>
 <body>
 
 <nav class="navbar">
     <div class="container nav-container">
         <a href="#" class="logo-wrapper logo-font">
-            <img src="./assets/images/logo.svg" alt="Logo">
+            <img src="../../assets/images/logo.svg" alt="Logo">
             <span class="brand-name">VietPlywood</span>
         </a>
 
         <div class="nav-right-group">
             <ul class="nav-links" id="navLinks">
-                <li><a href="#" class="active">Trang chủ</a></li>
-                <li><a href="./vn/catalog/index.html">Catalog</a></li>
-                <li><a href="./vn/products/index.html">Sản phẩm</a></li>
-                <li><a href="./vn/blogs/index.html">Blog</a></li>
-                <li><a href="./vn/about/index.html">Về chúng tôi</a></li>
-                <li><a href="vn/contact/index.html">Báo giá</a></li>
+                <li><a href="../../" >Trang chủ</a></li>
+                <li><a href="../catalog/" >Catalog</a></li>
+                <li><a href="#" class="active">Sản phẩm</a></li>
+                <li><a href="../blogs/">Blog</a></li>
+                <li><a href="../about/">Về chúng tôi</a></li>
+                <li><a href="../contact/">Báo giá</a></li>
             </ul>
 
             <div class="nav-actions">
@@ -456,320 +131,106 @@
     </div>
 </nav>
 
-<header class="hero-wrapper">
+<div class="body-page">
+    <section class="breadcrumb">
+        <div class="container">
+
+            <a href="../..">Trang chủ</a> / Sản phẩm
+        </div>
+    </section>
+
+
+<section class="products-hero">
     <div class="container">
-        <div class="hero-banner">
-            <div class="hero-content">
-                <h1>Ván ép Tiêu chuẩn <br> Giải pháp cho Sản xuất <br> Quy mô lớn</h1>
-                <p>Chất lượng ổn định · Sản xuất chủ động · Tiêu chuẩn thị trường<br> Giao hàng đúng tiến độ · Tiết kiệm chi phí</p>
-                <div class="hero-btns">
-                    <a href="vn/contact/index.html" class="btn-hero btn-contact-hero">Liên hệ chúng tôi</a>
-                    <a href="./assets/images/chat_luong.svg" download class="btn-hero btn-catalog-hero">Tải Catalog</a>
-                </div>
-            </div>
-        </div>
-    </div>
-</header>
-
-<section class="about-section">
-    <div class="container about-container">
-
-        <div class="bento-column-left">
-            <div class="bento-wrapper">
-                <div class="bento-box bento-white box-small">
-                    <div class="bento-icon-wrap">
-                        <img src="./assets/images/chat_luong.svg" alt="Chất lượng" class="bento-svg">
-                    </div>
-                    <span class="bento-label">Chất lượng được kiểm soát</span>
-                </div>
-
-                <div class="bento-box bento-tan box-large">
-                    <div class="bento-big-text">100%</div>
-                    <span class="bento-label-small">Nguồn nguyên liệu ổn định</span>
-                </div>
-
-                <div class="bento-box bento-dark box-large">
-                    <div class="bento-big-text">7+</div>
-                    <span class="bento-label-small">Năm kinh nghiệm</span>
-                </div>
-
-                <div class="bento-box bento-white box-small">
-                    <div class="bento-icon-wrap">
-                        <img src="./assets/images/bat_tay.svg" alt="Hợp tác" class="bento-svg">
-                    </div>
-                    <span class="bento-label">Chủ động sản xuất</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="about-content-right">
-            <span class="about-sub">TẦM NHÌN & SỨ MỆNH</span>
-            <h2 class="about-title">Chất lượng trong từng lớp ván</h2>
-            <p class="about-desc">
-                Chúng tôi hướng tới trở thành nhà cung cấp ván ép và ván bóc <strong>đạt tiêu chuẩn xuất khẩu</strong>,
-                được các doanh nghiệp trong và ngoài nước tin tưởng lựa chọn nhờ chất lượng ổn định,
-                nguồn cung bền vững và khả năng đáp ứng tiến độ sản xuất.
+        <div class="products-hero-inner">
+            <h1>Danh mục Sản phẩm</h1>
+            <p>
+                Chất lượng ổn định · Sản xuất chuyên nghiệp · Tiêu chuẩn xuất khẩu
             </p>
-
-            <div class="about-features">
-                <div class="feature-line">
-                    <strong>Đảm bảo kiểm soát độ bền và tính ổn định</strong>
-                    <p>Sản phẩm được sản xuất với độ dày, độ ẩm và chất lượng đồng đều, phù hợp cho các dây chuyền sản xuất công nghiệp.</p>
-                </div>
-                <div class="feature-line">
-                    <strong>Nguồn cung ổn định, chủ động</strong>
-                    <p>Khả năng sản xuất ổn định cho phép đáp ứng các đơn hàng khối lượng lớn và lặp lại.</p>
-                </div>
+            <p>
+                Giao hàng đúng tiến độ · Tiết kiệm chi phí
+            </p>
+            <div class="hero-actions">
+                <a href="../../assets/files/catalog_vn.pdf" download class="btn-outline btn-catalog-hero">Tải Catalog</a>
+                <a href="../contact/" class="btn-outline btn-contact-hero">Liên hệ chúng tôi</a>
             </div>
-
-            <a href="./vn/about/index.html" class="btn-about-more">Hiểu thêm về chúng tôi</a>
         </div>
-
     </div>
+
 </section>
 
 <section class="products-section">
     <div class="container">
-        <div class="products-header">
-            <div class="header-left">
-                <h2 class="section-title">Sản phẩm</h2>
-                <p class="section-subtitle">
-                    Ván ép đạt chuẩn xuất khẩu, nguyên liệu chất lượng cao. Độ dày tiêu chuẩn linh hoạt 3mm – 20mm,
-                    đáp ứng nhu cầu sản xuất công nghiệp. Có thể sản xuất theo yêu cầu riêng.
-                </p>
-            </div>
-            <div class="header-right">
-                <a href="./vn/products/index.html" class="view-all-link">
-                    Xem toàn bộ sản phẩm <i class="fa-solid fa-arrow-right-long"></i>
-                </a>
-            </div>
-        </div>
+        <h2 class="section-title">Ván ép bóc</h2>
 
         <div class="products-grid">
-            <div class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./assets/images/van_ep_phu_phim_1.png" alt="Ván ép phủ phim">
-                </div>
-                <div class="product-content">
-                    <h3 class="p-name">Ván ép phủ phim</h3>
-                    <p class="p-desc">Ván ép phủ phim có bề mặt bền, chống nước tốt. Phù hợp cho cốp pha xây dựng và các ứng dụng công nghiệp.</p>
-                    <div class="p-tags">
-                        <span>12mm</span><span>14mm</span><span>15mm</span><span>18mm</span>
-                    </div>
-                </div>
-            </div>
 
-            <div class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./assets/images/van_ep_mat_bintagor_1.png" alt="Ván ép mặt Bintangor">
-                </div>
-                <div class="product-content">
-                    <h3 class="p-name">Ván ép mặt Bintangor</h3>
-                    <p class="p-desc">Ván ép mặt Bintangor có bề mặt mịn, vân gỗ đẹp, dễ gia công. Thích hợp cho nội thất và trang trí.</p>
-                    <div class="p-tags">
-                        <span>3mm</span><span>8mm</span><span>11mm</span><span>13mm</span><span>15mm</span><span>20mm</span>
-                    </div>
-                </div>
-            </div>
+            <article class="product-card">
+                <img src="../../assets/images/products/film-faced.png" alt="Ván ép phủ phim">
+                <h3>Ván ép phủ phim</h3>
+                <ul class="product-meta">
+                    <li>1220 × 2440mm</li>
+                    <li>12 – 18mm</li>
+                    <li>7 – 11 lớp</li>
+                </ul>
+                <a href="product_1.html" class="btn-detail">Xem chi tiết</a>
+            </article>
 
-            <div class="product-card">
-                <div class="product-img-wrapper">
-                    <img src="./assets/images/van_ep_mat_trang_1.png" alt="Ván ép mặt trắng">
-                </div>
-                <div class="product-content">
-                    <h3 class="p-name">Ván ép mặt trắng</h3>
-                    <p class="p-desc">Ván ép mặt trắng có bề mặt sáng, phẳng, dễ sơn phủ. Phù hợp cho nội thất, tủ kệ và đồ gỗ công nghiệp.</p>
-                    <div class="p-tags">
-                        <span>2mm</span><span>3mm</span>
-                    </div>
-                </div>
-            </div>
+            <article class="product-card">
+                <img src="../../assets/images/products/bintangor.png" alt="Ván ép mặt Bintangor">
+                <h3>Ván ép mặt Bintangor</h3>
+                <ul class="product-meta">
+                    <li>1220 × 2440mm</li>
+                    <li>3 – 20mm</li>
+                    <li>3 – 13 lớp</li>
+                </ul>
+                <a href="product_2.html" class="btn-detail">Xem chi tiết</a>
+            </article>
+
+            <article class="product-card">
+                <img src="../../assets/images/products/okoume.png" alt="Ván ép mặt Okoume">
+                <h3>Ván ép mặt Okoume</h3>
+                <ul class="product-meta">
+                    <li>1220 × 2440mm</li>
+                    <li>3 – 20mm</li>
+                    <li>3 – 13 lớp</li>
+                </ul>
+                <a href="product_3.html" class="btn-detail">Xem chi tiết</a>
+            </article>
+
+            <article class="product-card">
+                <img src="../../assets/images/products/white.png" alt="Ván ép mặt trắng">
+                <h3>Ván ép mặt trắng</h3>
+                <ul class="product-meta">
+                    <li>1220 × 2440mm</li>
+                    <li>3 – 18mm</li>
+                    <li>3 – 11 lớp</li>
+                </ul>
+                <a href="product_4.html" class="btn-detail">Xem chi tiết</a>
+            </article>
+
+            <article class="product-card">
+                <img src="../../assets/images/products/veneer.png" alt="Ván ép mặt xoan Veneer">
+                <h3>Ván ép mặt xoan Veneer</h3>
+                <ul class="product-meta">
+                    <li>1220 × 2440mm</li>
+                    <li>3 – 20mm</li>
+                    <li>3 – 11 lớp</li>
+                </ul>
+                <a href="product_5.html" class="btn-detail">Xem chi tiết</a>
+            </article>
+
         </div>
     </div>
 </section>
 
-<section class="features-section">
-    <div class="container">
-        <div class="features-header">
-            <span class="features-sub">LỢI THẾ CỦA CHÚNG TÔI</span>
-            <h2 class="features-title">Lý do chọn chúng tôi</h2>
-        </div>
-
-        <div class="features-grid">
-            <div class="feature-card">
-                <div class="feature-top">
-                    <p>Ván ép được kiểm soát nghiêm ngặt từ nguyên liệu đến thành phẩm, quy trình chuẩn hóa, đáp ứng tiêu chuẩn kỹ thuật của thị trường.</p>
-                </div>
-                <div class="feature-bottom">
-                    <div class="feature-icon">
-                        <img src="./assets/images/mat_go_1.svg" alt="Chất lượng">
-                    </div>
-                    <div class="feature-text">
-                        <h4>Chất lượng ổn định</h4>
-                        <span>Tiêu chuẩn thị trường</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-top">
-                    <p>Nhà máy chủ động nguồn cung, đáp ứng đơn hàng container, đảm bảo tiến độ giao hàng cho doanh nghiệp và các dự án lớn.</p>
-                </div>
-                <div class="feature-bottom">
-                    <div class="feature-icon">
-                        <img src="./assets/images/mat_go_2.svg" alt="Sản xuất">
-                    </div>
-                    <div class="feature-text">
-                        <h4>Sản xuất chủ động</h4>
-                        <span>Đáp ứng mọi tiến độ</span>
-                    </div>
-                </div>
-            </div>
-
-            <div class="feature-card">
-                <div class="feature-top">
-                    <p>Vị trí gần vùng nguyên liệu giúp tối ưu giá thành; đội ngũ tư vấn hỗ trợ giải pháp tiết kiệm chi phí và giảm rủi ro chuỗi cung ứng.</p>
-                </div>
-                <div class="feature-bottom">
-                    <div class="feature-icon">
-                        <img src="./assets/images/mat_go_3.svg" alt="Chi phí">
-                    </div>
-                    <div class="feature-text">
-                        <h4>Chi phí tối ưu</h4>
-                        <span>Tiết kiệm cho doanh nghiệp</span>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="counter-section">
-    <div class="container">
-        <div class="counter-grid">
-            <div class="counter-item">
-                <div class="counter-content">
-                    <div class="counter-icon">
-                        <img src="./assets/images/counter_2m.svg" alt="Supply">
-                    </div>
-                    <div class="counter-info">
-                        <h3 class="counter-number">2M+</h3>
-                        <p class="counter-label">ĐÃ ĐƯỢC CUNG ỨNG</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="counter-item">
-                <div class="counter-content">
-                    <div class="counter-icon">
-                        <img src="./assets/images/counter_10.svg" alt="Global">
-                    </div>
-                    <div class="counter-info">
-                        <h3 class="counter-number">10+</h3>
-                        <p class="counter-label">QUỐC GIA ĐÃ PHỤC VỤ</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="counter-item">
-                <div class="counter-content">
-                    <div class="counter-icon">
-                        <img src="./assets/images/counter_7y.svg" alt="Quality">
-                    </div>
-                    <div class="counter-info">
-                        <h3 class="counter-number">7 Yrs+</h3>
-                        <p class="counter-label">CAM KẾT CHẤT LƯỢNG</p>
-                    </div>
-                </div>
-            </div>
-
-            <div class="counter-item">
-                <div class="counter-content">
-                    <div class="counter-icon">
-                        <img src="./assets/images/counter_24h.svg" alt="Support">
-                    </div>
-                    <div class="counter-info">
-                        <h3 class="counter-number">24 Hr</h3>
-                        <p class="counter-label">TƯ VẤN & BÁO GIÁ</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
-
-<section class="contact-section">
-    <div class="container">
-        <div class="contact-wrapper">
-            <div class="contact-info-panel">
-                <div class="contact-info-content">
-                    <span class="contact-sub">LIÊN HỆ NHẬN BÁO GIÁ NGAY</span>
-                    <h2 class="contact-title">Sẵn sàng bổ sung nguồn hàng cho kho của bạn?</h2>
-                    <p class="contact-desc">
-                        Nhận báo giá cạnh tranh ngay hôm nay. Đội ngũ của chúng tôi phản hồi mọi yêu cầu đơn hàng.
-                    </p>
-
-                    <div class="contact-method-list">
-                        <div class="method-item">
-                            <div class="method-icon">
-                                <i class="fa-solid fa-phone"></i>
-                            </div>
-                            <div class="method-text">
-                                <strong>Sale contact</strong>
-                                <div>(+84) 916 884 008</div>
-                                <div>(+84) 762 012 459</div>
-                            </div>
-                        </div>
-                        <div class="method-item">
-                            <div class="method-icon">
-                                <i class="fa-solid fa-envelope"></i>
-                            </div>
-                            <div class="method-text">
-                                <strong>Email</strong>
-                                <span>tmdvvietnam@gmail.com</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-
-            <div class="contact-form-panel">
-                <form id="quoteForm" class="quote-form">
-                    <div class="form-row">
-                        <div class="form-group">
-                            <label>Họ & Tên</label>
-                            <input type="text" placeholder="John Doe">
-                        </div>
-                        <div class="form-group">
-                            <label>Tên công ty</label>
-                            <input type="text" placeholder="Construction Co.">
-                        </div>
-                    </div>
-                    <div class="form-group">
-                        <label>Email</label>
-                        <input type="email" placeholder="name@company.com">
-                    </div>
-                    <div class="form-group">
-                        <label>SĐT</label>
-                        <input type="tel" placeholder="+1 (555) 000-0000">
-                    </div>
-                    <div class="form-group">
-                        <label>Yêu cầu báo giá</label>
-                        <textarea placeholder="Mô tả nhu cầu của bạn" rows="4"></textarea>
-                    </div>
-                    <button type="submit" class="btn-submit">Yêu cầu báo giá</button>
-                </form>
-            </div>
-        </div>
-    </div>
-</section>
-
+</div>
 <footer class="footer-section">
     <div class="container">
         <div class="footer-grid">
             <div class="footer-column info-col">
                 <div class="footer-logo logo-font">
-                    <img src="./assets/images/logo.svg" alt="VIETPLYWOOD">
+                    <img src="../../assets/images/logo.svg" alt="VIETPLYWOOD">
                     <span class="logo-text">VIETPLYWOOD</span>
                 </div>
                 <p class="company-desc">
@@ -831,84 +292,9 @@
     </div>
 </footer>
 
-<div id="success-toast" class="toast-message">
-    <div class="toast-content">
-        <i class="fa-solid fa-circle-check"></i>
-        <span>Gửi yêu cầu thành công! Chúng tôi sẽ liên hệ lại sớm.</span>
-    </div>
-</div>
-<script src="./assets/js/form.js"></script>
-<script src="./assets/js/header.js"></script>
-<!--<script>-->
-<!--    const API_URL = 'https://script.google.com/macros/s/AKfycbxrk4VOK1w2XNJfrRGYDyWkprMBPONZ5BNGCENr8pig99oMIQX2d9dR6UlwxB5vSp4/exec';-->
 
-<!--    document.getElementById('quoteForm').addEventListener('submit', function(e) {-->
-<!--        e.preventDefault();-->
+<script src="../../assets/js/header.js"></script>
 
-<!--        const btn = this.querySelector('.btn-submit');-->
-<!--        const toast = document.getElementById('success-toast');-->
-
-<!--        // Trạng thái đang gửi-->
-<!--        btn.innerText = 'Đang xử lý...';-->
-<!--        btn.style.opacity = '0.7';-->
-<!--        btn.style.pointerEvents = 'none';-->
-
-<!--        const formData = {-->
-<!--            name: this.querySelector('input[placeholder="John Doe"]').value,-->
-<!--            ctyName: this.querySelector('input[placeholder="Construction Co."]').value,-->
-<!--            email: this.querySelector('input[type="email"]').value,-->
-<!--            phone: this.querySelector('input[type="tel"]').value,-->
-<!--            content: this.querySelector('textarea').value,-->
-<!--            title: "Yêu cầu từ web",-->
-<!--            status: "Đã gửi qua API"-->
-<!--        };-->
-
-<!--        fetch(API_URL, {-->
-<!--            method: 'POST',-->
-<!--            mode: 'no-cors',-->
-<!--            cache: 'no-cache',-->
-<!--            body: JSON.stringify(formData)-->
-<!--        })-->
-<!--            .then(() => {-->
-<!--                // Hiện thông báo thành công đẹp mắt-->
-<!--                toast.classList.add('show');-->
-<!--                this.reset(); // Xóa dữ liệu form-->
-
-<!--                // Tự động ẩn thông báo sau 3 giây-->
-<!--                setTimeout(() => {-->
-<!--                    toast.classList.remove('show');-->
-<!--                }, 3500);-->
-<!--            })-->
-<!--            .catch(() => {-->
-<!--                alert('Có lỗi xảy ra, vui lòng liên hệ hotline.');-->
-<!--            })-->
-<!--            .finally(() => {-->
-<!--                // Khôi phục nút bấm-->
-<!--                btn.innerText = 'Yêu cầu báo giá';-->
-<!--                btn.style.opacity = '1';-->
-<!--                btn.style.pointerEvents = 'auto';-->
-<!--            });-->
-<!--    });-->
-
-<!--    // Mobile Menu & Lang Select Scripts-->
-<!--    const menuToggle = document.getElementById('menuToggle');-->
-<!--    const navLinks = document.getElementById('navLinks');-->
-<!--    menuToggle.addEventListener('click', () => {-->
-<!--        navLinks.classList.toggle('show');-->
-<!--    });-->
-
-<!--    const langSelect = document.getElementById('langSelect');-->
-<!--    langSelect.addEventListener('click', (e) => {-->
-<!--        e.stopPropagation();-->
-<!--        langSelect.classList.toggle('open');-->
-<!--    });-->
-<!--    document.querySelectorAll('.option').forEach(opt => {-->
-<!--        opt.addEventListener('click', () => {-->
-<!--            document.getElementById('currentLang').innerText = opt.dataset.value;-->
-<!--        });-->
-<!--    });-->
-<!--    window.onclick = () => langSelect.classList.remove('open');-->
-<!--</script>-->
 
 </body>
 </html>

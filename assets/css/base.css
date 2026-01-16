@@ -99,6 +99,21 @@ a { text-decoration: none; color: inherit; }
 .footer-social { display: flex; gap: 15px; }
 .footer-social a { color: #A3968C; font-size: 1.1rem; }
 
+.body-page{
+    padding: 20px;
+    background: linear-gradient(
+            90deg,
+            #F7F2EE 0%,
+            #F2E2D5 100%
+    );
+    color: #513C2E;
+    font-family: "Inter", system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+}
+
+.breadcrumb{
+    margin-bottom: 20px;font-size: medium;
+}
+
 /* --- RESPONSIVE MEDIA QUERIES --- */
 @media (max-width: 992px) {
     .nav-links { display: none; }

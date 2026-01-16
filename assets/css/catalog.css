@@ -1,0 +1,164 @@
+/* =========================
+   CATALOG BACKGROUND WRAPPER
+   ========================= */
+
+.catalog-bg {
+    padding: 80px 20px;
+    background: linear-gradient(
+            90deg,
+            #F7F2EE 0%,
+            #F2E2D5 100%
+    );
+}
+
+/* =========================
+   SLIDER WRAPPER
+   ========================= */
+
+.catalog-slider {
+    position: relative;
+    width: 100%;
+    max-width: 80%;
+    margin: 0 auto;
+    overflow: hidden;
+    border-radius: 16px;
+    background: transparent;
+
+    /* dùng cho blur background */
+    --bg-image: none;
+}
+
+/* BLUR BACKGROUND INSIDE SLIDER */
+.catalog-slider::before {
+    content: "";
+    position: absolute;
+    inset: -40px;
+
+    background-image:
+            linear-gradient(
+                    90deg,
+                    rgba(0,0,0,0.35),
+                    rgba(0,0,0,0.05),
+                    rgba(0,0,0,0.35)
+            ),
+            var(--bg-image);
+
+    background-size: cover;
+    background-position: center;
+    filter: blur(28px) brightness(0.9);
+    transform: scale(1.15);
+    z-index: 0;
+}
+
+/* =========================
+   SLIDER TRACK & SLIDES
+   ========================= */
+
+.slider-track {
+    position: relative;
+    z-index: 1;
+    display: flex;
+    transition: transform 0.6s ease;
+}
+
+.slide {
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 0;
+}
+
+.slide img {
+    max-width: 90%;
+    max-height: 600px;
+    object-fit: contain;
+    border-radius: 12px;
+    background: #ffffff;
+    box-shadow: 0 20px 50px rgba(0,0,0,0.25);
+}
+
+/* =========================
+   CONTROLS
+   ========================= */
+
+.slider-btn {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    z-index: 2;
+    width: 44px;
+    height: 44px;
+    border-radius: 50%;
+    border: none;
+    background: rgba(0,0,0,0.55);
+    color: #ffffff;
+    font-size: 20px;
+    cursor: pointer;
+    transition: background 0.2s ease, transform 0.2s ease;
+}
+
+.slider-btn:hover {
+    background: rgba(0,0,0,0.75);
+    transform: translateY(-50%) scale(1.05);
+}
+
+.slider-btn.prev { left: 16px; }
+.slider-btn.next { right: 16px; }
+
+/* =========================
+   INDICATOR
+   ========================= */
+
+.indicator {
+    position: absolute;
+    bottom: 16px;
+    left: 50%;
+    transform: translateX(-50%);
+    z-index: 2;
+    font-size: 14px;
+    color: #ffffff;
+    background: rgba(0,0,0,0.45);
+    padding: 6px 12px;
+    border-radius: 999px;
+}
+
+/* =========================
+   RESPONSIVE - MOBILE
+   ========================= */
+
+@media (max-width: 768px) {
+
+    .catalog-bg {
+        padding: 50px 10px;
+    }
+
+    .slide {
+        padding: 20px 0;
+    }
+
+    .slide img {
+        max-height: 75vh;
+        max-width: 92%;
+    }
+
+    /* giảm blur cho mobile */
+    .catalog-slider::before {
+        filter: blur(18px) brightness(0.9);
+        transform: scale(1.1);
+    }
+
+    .slider-btn {
+        width: 36px;
+        height: 36px;
+        font-size: 16px;
+    }
+
+    .slider-btn.prev { left: 10px; }
+    .slider-btn.next { right: 10px; }
+
+    .indicator {
+        font-size: 12px;
+        padding: 4px 10px;
+    }
+}

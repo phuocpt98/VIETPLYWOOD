@@ -12,10 +12,10 @@ document.getElementById('quoteForm').addEventListener('submit', function(e) {
     btn.style.pointerEvents = 'none';
 
     const formData = {
-        name: this.querySelector('input[placeholder="John Doe"]').value,
-        ctyName: this.querySelector('input[placeholder="Construction Co."]').value,
-        email: this.querySelector('input[type="email"]').value,
-        phone: this.querySelector('input[type="tel"]').value,
+        name: this.querySelector('input[name="name"]').value,
+        ctyName: this.querySelector('input[name="ctyName"]').value,
+        email: this.querySelector('input[name="email"]').value,
+        phone: this.querySelector('input[name="tel"]').value,
         content: this.querySelector('textarea').value,
         title: "Yêu cầu từ web",
         status: "Đã gửi qua API"
