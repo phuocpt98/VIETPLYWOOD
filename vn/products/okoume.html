@@ -28,62 +28,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
-
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "Ván ép mặt Bintangor",
-            "image": [
-                "../../assets/images/bintagor_1.png",
-                "../../assets/images/bintagor_2.png",
-                "../../assets/images/bintagor_3.png",
-                "../../assets/images/bintagor_4.png",
-                "../../assets/images/bintagor_5.png"
-            ],
-            "description": "Ván ép mặt Bintangor có bề mặt màu nâu đỏ tự nhiên, vân gỗ nhẹ, dễ gia công và phù hợp cho sản xuất nội thất, bao bì và xuất khẩu số lượng lớn.",
-            "sku": "BINTANGOR-PLYWOOD",
-            "brand": {
-                "@type": "Brand",
-                "name": "VietPlywood"
-            },
-            "material": "Gỗ keo, veneer Bintangor",
-            "additionalProperty": [
+            "@context": "https://schema.org",
+            "@graph": [
                 {
-                    "@type": "PropertyValue",
-                    "name": "Kích thước tiêu chuẩn",
-                    "value": "1220 x 2440 mm"
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Trang chủ",
+                            "item": "https://yourdomain.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Sản phẩm",
+                            "item": "https://yourdomain.com/san-pham/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Ván ép mặt Okoume",
+                            "item": "https://yourdomain.com/san-pham/van-ep-mat-okoume.html"
+                        }
+                    ]
                 },
                 {
-                    "@type": "PropertyValue",
-                    "name": "Độ dày",
-                    "value": "3 – 20 mm"
-                },
-                {
-                    "@type": "PropertyValue",
-                    "name": "Loại mặt phủ",
-                    "value": "AA / AB / BB"
-                },
-                {
-                    "@type": "PropertyValue",
-                    "name": "Loại keo",
-                    "value": "Keo E2"
+                    "@type": "Product",
+                    "@id": "https://yourdomain.com/san-pham/van-ep-mat-okoume.html#product",
+                    "name": "Ván ép mặt Okoume",
+                    "image": [
+                        "https://yourdomain.com/assets/images/okoume_1.png",
+                        "https://yourdomain.com/assets/images/okoume_2.png",
+                        "https://yourdomain.com/assets/images/okoume_3.png"
+                    ],
+                    "description": "Ván ép mặt Okoume sử dụng veneer Okoume ở lớp ngoài, bề mặt sáng, vân gỗ mịn, dễ sơn và gia công. Sản phẩm có độ ổn định cao, trọng lượng nhẹ, phù hợp sản xuất nội thất và xuất khẩu.",
+                    "sku": "OKOUME-PLYWOOD",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "VietPlywood"
+                    },
+                    "material": "Gỗ keo, veneer Okoume",
+                    "additionalProperty": [
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Kích thước tiêu chuẩn",
+                            "value": "1220 × 2440 mm"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Độ dày",
+                            "value": "3 – 20 mm"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Mặt phủ",
+                            "value": "AA / AB / BB"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Loại keo",
+                            "value": "Keo E2"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Dung sai độ dày",
+                            "value": "± 0.5 mm"
+                        }
+                    ],
+                    "offers": {
+                        "@type": "Offer",
+                        "url": "https://yourdomain.com/contact/",
+                        "priceCurrency": "VND",
+                        "availability": "https://schema.org/InStock",
+                        "price": "0",
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "priceCurrency": "VND",
+                            "price": "Liên hệ báo giá"
+                        }
+                    }
                 }
-            ],
-            "offers": {
-                "@type": "Offer",
-                "url": "https://yourdomain.com/van-ep-mat-bintangor.html",
-                "priceCurrency": "VND",
-                "availability": "https://schema.org/InStock",
-                "priceSpecification": {
-                    "@type": "PriceSpecification",
-                    "price": "0",
-                    "priceCurrency": "VND"
-                }
-            }
+            ]
         }
     </script>
-
 
 
 
@@ -137,7 +167,7 @@
         <div class="container">
             <a href="../../index.html">Trang chủ</a> /
             <a href="./">Sản phẩm</a> /
-            <span>Ván ép mặt Bintangor</span>
+            <span>Ván ép mặt Okoume</span>
         </div>
     </section>
 
@@ -147,38 +177,32 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-
                 <div class="gallery-wrapper">
                     <button class="gallery-btn prev">‹</button>
-
-                    <img
-                            class="product-main-image"
-                            src="../../assets/images/bintagor_1.png"
-                            alt="Ván ép mặt Bintangor">
-
+                    <img class="product-main-image"
+                         src="../../assets/images/okoume_1.png"
+                         alt="Ván ép  mặt Okoume">
                     <button class="gallery-btn next">›</button>
                 </div>
 
                 <div class="product-thumbs">
-                    <img src="../../assets/images/bintagor_1.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_2.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_3.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_4.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_5.png" alt="Ván ép mặt Bintangor">
+                    <img src="../../assets/images/okoume_1.png" alt="Ván ép  mặt Okoume">
+                    <img src="../../assets/images/okoume_2.png" alt="Ván ép  mặt Okoume">
+                    <img src="../../assets/images/okoume_3.png" alt="Ván ép  mặt Okoume">
+                    <img src="../../assets/images/okoume_4.png" alt="Ván ép  mặt Okoume">
+                    <img src="../../assets/images/okoume_5.png" alt="Ván ép  mặt Okoume">
                 </div>
             </div>
 
-
             <!-- Info -->
             <div class="product-info">
-                <h1>Ván ép mặt Bintangor</h1>
-                <span class="product-tag">#bintangor</span>
+                <h1>Ván ép mặt Okoume</h1>
+                <span class="product-tag">#okoume</span>
 
                 <p class="product-desc">
-                    Ván ép mặt Bintangor là loại ván ép được phủ một lớp veneer Bintangor tự nhiên trên bề mặt, mang đến độ thẩm mỹ cao và khả năng chống trầy xước tốt, giúp tấm ván bền chắc và phù hợp cho nhiều ứng dụng nội thất – xây dựng
+                    Ván ép mặt Okoume là loại ván ép sử dụng veneer Okoume ở lớp ngoài, đặc trưng bởi màu sắc sáng và vân gỗ mịn, giúp nâng cao tính thẩm mỹ và khả năng gia công, đồng thời giữ được độ bền ổn định trong quá trình sử dụng.
                 </p>
 
-                <!-- Quick specs -->
                 <div class="product-quick-spec">
 
                     <div class="spec-group">
@@ -201,11 +225,14 @@
                     <div class="spec-group">
                         <label>Độ dày</label>
                         <div class="spec-options">
+                            <button class="spec-btn">3mm – 3 lớp</button>
+                            <button class="spec-btn">5mm – 3 lớp</button>
+                            <button class="spec-btn">8mm – 5 lớp</button>
+                            <button class="spec-btn">11mm – 7 lớp</button>
                             <button class="spec-btn">13mm – 8 lớp</button>
                             <button class="spec-btn">15mm – 9 lớp</button>
                             <button class="spec-btn">17mm – 11 lớp</button>
                             <button class="spec-btn">20mm – 13 lớp</button>
-                            <button class="spec-btn">3mm – 3 lớp</button>
                             <button class="spec-btn">Theo yêu cầu</button>
                         </div>
                     </div>
@@ -232,46 +259,29 @@
     <section class="product-detail-content">
         <div class="container">
 
-            <!-- Thông số chi tiết -->
+            <!-- Thông số -->
             <div class="tab-content active" id="tab-spec">
                 <div class="product-detail-bottom">
 
                     <div class="product-spec-table">
                         <h3>Thông số kỹ thuật</h3>
                         <table>
-                            <tr>
-                                <td>Loại lõi</td>
-                                <td>Gỗ keo</td>
-                            </tr>
-                            <tr>
-                                <td>Loại keo</td>
-                                <td>Keo E2</td>
-                            </tr>
-                            <tr>
-                                <td>Dung sai độ dày</td>
-                                <td>± 0.5 mm</td>
-                            </tr>
-                            <tr>
-                                <td>Loại mặt phủ</td>
-                                <td>AA / AB / BB</td>
-                            </tr>
-                            <tr>
-                                <td>Kích thước</td>
-                                <td>1220 × 2440mm</td>
-                            </tr>
-                            <tr>
-                                <td>Độ dày</td>
-                                <td>3 – 20mm</td>
-                            </tr>
+                            <tr><td>Loại lõi</td><td>Gỗ keo</td></tr>
+                            <tr><td>Loại keo</td><td>Keo E2</td></tr>
+                            <tr><td>Dung sai độ dày</td><td>± 0.5 mm</td></tr>
+                            <tr><td>Mặt phim</td><td>AA/AB/BB</td></tr>
+                            <tr><td>Kích thước</td><td>1220 × 2440mm</td></tr>
+                            <tr><td>Độ dày</td><td>3 – 20mm</td></tr>
                             <tr>
                                 <td>Đặc điểm nổi bật</td>
                                 <td>
                                     <ul>
-                                        <li>- Độ bền cao, chịu lực tốt trong quá trình sử dụng</li>
-                                        <li>- Bề mặt ổn định, màu sắc giữ đều theo thời gian</li>
-                                        <li>- Dễ thi công, lắp đặt và gia công</li>
-                                        <li>- Khả năng chịu nhiệt ổn định</li>
-                                        <li>- Không bị ảnh hưởng bởi các hóa chất thông thường</li>
+                                        <li>– Bề mặt Okoume màu sáng, vân mịn, dễ hoàn thiện </li>
+                                        <li>– Trọng lượng nhẹ, thuận tiện thi công và vận chuyển </li>
+                                        <li>– Kết cấu ván ổn định, hạn chế cong vênh trong quá trình sử dụng </li>
+                                        <li>– Dễ bám sơn, bám keo, phù hợp nhiều kiểu xử lý bề mặt </li>
+                                        <li>– Độ bền cơ học tốt cho các hạng mục nội thất phổ thông </li>
+                                        <li>– Hoạt động ổn định trong môi trường khô và độ ẩm thông thường </li>
                                     </ul>
                                 </td>
                             </tr>
@@ -281,67 +291,42 @@
                     <div class="product-applications">
                         <h3>Ứng dụng thực tế</h3>
                         <div class="app-tags">
-                            <div class="app-tag">
-                                <img src="../../assets/images/ghe.png" alt="">
-                                <span>Nội thất</span>
-                            </div>
-                            <div class="app-tag">
-                                <img src="../../assets/images/tu.png" alt="">
-                                <span>Tủ kệ</span>
-                            </div>
-                            <div class="app-tag">
-                                <img src="../../assets/images/vach_ngan.png" alt="">
-                                <span>Vách ngăn</span>
-                            </div>
-                            <div class="app-tag">
-                                <img src="../../assets/images/sua_chua.png" alt="">
-                                <span>Xây dựng nhẹ</span>
-                            </div>
+                            <div class="app-tag"><img src="../../assets/images/ghe.png"><span>Nội thất</span></div>
+                            <div class="app-tag"><img src="../../assets/images/tu.png"><span>Tủ kệ</span></div>
+                            <div class="app-tag"><img src="../../assets/images/hop_qua.svg"><span>Hộp quà tặng</span></div>
+                            <div class="app-tag"><img src="../../assets/images/hop_thu_cong.svg"><span>Đồ thủ công mỹ nghệ</span></div>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- Đặc điểm chung -->
+            <!-- Đặc điểm -->
             <div class="tab-content" id="tab-feature">
-                <h2>VÁN ÉP MẶT BINTANGOR</h2>
+                <h2>VÁN ÉP MẶT Okoume</h2>
 
                 <p>
-                    Ván ép mặt Bintangor từ lâu đã trở thành lựa chọn quen thuộc của các xưởng nội thất, nhà máy bao bì và doanh nghiệp sản xuất đồ gỗ. Với lợi thế giá thành cạnh tranh, màu sắc ổn định, bề mặt dễ xử lý, dòng ván này mang lại sự cân bằng tốt giữa chi phí – thẩm mỹ – độ bền, đặc biệt phù hợp cho các thị trường yêu cầu số lượng lớn và mức giá tối ưu.
+                    Nếu bạn đang tìm một loại ván có bề mặt sáng – mịn – dễ sơn, chất lượng ổn định và cảm giác cao cấp hơn so với các loại veneer phổ thông, ván ép mặt Okoume chính là lựa chọn phù hợp. Đây là dòng ván được ưa chuộng tại nhiều thị trường như Nhật Bản, Hàn Quốc, Malaysia, Singapore nhờ chất lượng thẩm mỹ đồng đều và trọng lượng nhẹ.
                 </p>
 
-                <h3>1. Đặc điểm bề mặt của ván ép Bintangor</h3>
-                <p>
-                    Veneer Bintangor sở hữu sắc nâu đỏ tự nhiên, vân gỗ nhẹ, tạo hiệu ứng đẹp khi sơn hoặc phủ PU. Bề mặt khá “dễ tính”, không đòi hỏi nhiều công đoạn xử lý nên giúp doanh nghiệp tiết kiệm thời gian và chi phí sản xuất.
-                </p>
-                <p>
-                    Đây cũng là dòng ván có trọng lượng vừa phải, dễ cắt ghép và không làm cùn lưỡi cưa nhanh như các loại gỗ cứng.
-                </p>
-
-                <h3>2. Ưu điểm nổi bật của ván Bintangor trong sản xuất
+                <h3>1. Đặc trưng nổi bật của veneer Okoume
                 </h3>
                 <p>
-                    Điểm mạnh của ván Bintangor nằm ở khả năng đáp ứng đa dạng nhu cầu. Dòng ván này có thể sản xuất theo nhiều tiêu chuẩn độ bền, từ keo trung bình cho bao bì đến keo chất lượng cao cho nội thất. Ván ít cong vênh, tỷ lệ lỗi mặt thấp nếu được sản xuất từ lõi gỗ keo – bạch đàn sấy kỹ.
-
+                    Okoume có tông màu hồng nhạt hoặc đỏ sáng, bề mặt mịn và vân đều. Đây là veneer mang tính thẩm mỹ cao, ít khuyết tật, giúp rút ngắn bước chà nhám trong sản xuất. Ván Okoume luôn được đánh giá cao về độ đẹp và sự nhất quán.
                 </p>
 
-                <h3>3. Vì sao doanh nghiệp nên chọn ván Bintangor trong sản xuất?
+                <h3>2. Lợi thế khi dùng ván Okoume trong nội thất
                 </h3>
-                <ul>
-                    <li>- Giá thành cạnh tranh, phù hợp sản xuất số lượng lớn
-                    </li>
-                    <li>- Dễ thi công, thời gian xử lý nhanh
-                    </li>
-                    <li>- Tính thẩm mỹ ổn định, dễ sơn và phối màu
-                    </li>
-                    <li>- Nguồn cung dồi dào, phù hợp đơn hàng container
-                    </li>
-                    <li>
-                        - Đây là lựa chọn lý tưởng cho doanh nghiệp cần vật liệu ổn định, giá tốt và dễ triển khai hàng loạt.
+                <p>
+                    Nhờ trọng lượng nhẹ, ván Okoume giúp giảm tải cho cấu trúc nội thất, tiết kiệm chi phí vận chuyển. Ván cũng bám sơn rất tốt, phù hợp các sản phẩm cần màu sắc tươi sáng hoặc hoàn thiện tinh tế. Đặc biệt, Okoume phù hợp các thị trường yêu cầu tiêu chuẩn kỹ thuật cao.
+                </p>
 
-                    </li>
-                </ul>
+                <h3>3. Mức độ phù hợp với từng thị trường xuất khẩu
+
+                </h3>
+                <p>
+                    Ván Okoume được nhiều thị trường châu Á và Trung Đông lựa chọn nhờ bề mặt đẹp, độ bền linh hoạt và mức giá hợp lý. Các doanh nghiệp thường đặt Okoume theo tiêu chuẩn E1/E2, hoặc theo yêu cầu riêng về độ dày, chất lượng lõi và độ ẩm.
+                </p>
             </div>
 
         </div>
@@ -354,17 +339,17 @@
 
             <div class="products-grid">
 
+                <a href="bintagor.html" class="product-link">
+                    <article class="product-card">
+                        <img src="../../assets/images/bintagor_1.png" alt="">
+                        <h4>Ván ép mặt Bintangor</h4>
+                    </article>
+                </a>
+
                 <a href="film-faced.html" class="product-link">
                     <article class="product-card">
                         <img src="../../assets/images/phu_phim_1.png" alt="">
                         <h4>Ván ép phủ phim</h4>
-                    </article>
-                </a>
-
-                <a href="okoume.html" class="product-link">
-                    <article class="product-card">
-                        <img src="../../assets/images/okoume_1.png" alt="">
-                        <h4>Ván ép mặt Okoume</h4>
                     </article>
                 </a>
 
@@ -387,6 +372,7 @@
     </section>
 
 </div>
+
 
 
 <footer class="footer-section">

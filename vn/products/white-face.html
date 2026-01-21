@@ -28,63 +28,92 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link href="https://fonts.googleapis.com/css2?family=Bungee&display=swap" rel="stylesheet">
 
-
     <script type="application/ld+json">
         {
-            "@context": "https://schema.org/",
-            "@type": "Product",
-            "name": "Ván ép mặt Bintangor",
-            "image": [
-                "../../assets/images/bintagor_1.png",
-                "../../assets/images/bintagor_2.png",
-                "../../assets/images/bintagor_3.png",
-                "../../assets/images/bintagor_4.png",
-                "../../assets/images/bintagor_5.png"
-            ],
-            "description": "Ván ép mặt Bintangor có bề mặt màu nâu đỏ tự nhiên, vân gỗ nhẹ, dễ gia công và phù hợp cho sản xuất nội thất, bao bì và xuất khẩu số lượng lớn.",
-            "sku": "BINTANGOR-PLYWOOD",
-            "brand": {
-                "@type": "Brand",
-                "name": "VietPlywood"
-            },
-            "material": "Gỗ keo, veneer Bintangor",
-            "additionalProperty": [
+            "@context": "https://schema.org",
+            "@graph": [
                 {
-                    "@type": "PropertyValue",
-                    "name": "Kích thước tiêu chuẩn",
-                    "value": "1220 x 2440 mm"
+                    "@type": "BreadcrumbList",
+                    "itemListElement": [
+                        {
+                            "@type": "ListItem",
+                            "position": 1,
+                            "name": "Trang chủ",
+                            "item": "https://yourdomain.com/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 2,
+                            "name": "Sản phẩm",
+                            "item": "https://yourdomain.com/san-pham/"
+                        },
+                        {
+                            "@type": "ListItem",
+                            "position": 3,
+                            "name": "Ván ép mặt trắng",
+                            "item": "https://yourdomain.com/san-pham/van-ep-mat-trang.html"
+                        }
+                    ]
                 },
                 {
-                    "@type": "PropertyValue",
-                    "name": "Độ dày",
-                    "value": "3 – 20 mm"
-                },
-                {
-                    "@type": "PropertyValue",
-                    "name": "Loại mặt phủ",
-                    "value": "AA / AB / BB"
-                },
-                {
-                    "@type": "PropertyValue",
-                    "name": "Loại keo",
-                    "value": "Keo E2"
+                    "@type": "Product",
+                    "@id": "https://yourdomain.com/san-pham/van-ep-mat-trang.html#product",
+                    "name": "Ván ép mặt trắng",
+                    "image": [
+                        "https://yourdomain.com/assets/images/mat_trang_1.png",
+                        "https://yourdomain.com/assets/images/mat_trang_2.png",
+                        "https://yourdomain.com/assets/images/mat_trang_3.png"
+                    ],
+                    "description": "Ván ép mặt trắng là loại ván ép phủ bề mặt trắng chuyên dụng, bề mặt sáng – sạch – đồng đều, dễ lau chùi, khó bám bẩn và giữ màu ổn định theo thời gian. Sản phẩm phù hợp nội thất hiện đại, văn phòng và các ứng dụng cần tính thẩm mỹ cao.",
+                    "sku": "WHITE-PLYWOOD",
+                    "brand": {
+                        "@type": "Brand",
+                        "name": "VietPlywood"
+                    },
+                    "material": "Gỗ keo",
+                    "additionalProperty": [
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Kích thước tiêu chuẩn",
+                            "value": "1220 × 2440 mm"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Độ dày",
+                            "value": "2 – 3 mm"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Mặt phủ",
+                            "value": "AA / AB / BB"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Loại keo",
+                            "value": "Keo E2"
+                        },
+                        {
+                            "@type": "PropertyValue",
+                            "name": "Dung sai độ dày",
+                            "value": "± 0.5 mm"
+                        }
+                    ],
+                    "offers": {
+                        "@type": "Offer",
+                        "url": "https://yourdomain.com/contact/",
+                        "priceCurrency": "VND",
+                        "availability": "https://schema.org/InStock",
+                        "price": "0",
+                        "priceSpecification": {
+                            "@type": "PriceSpecification",
+                            "priceCurrency": "VND",
+                            "price": "Liên hệ báo giá"
+                        }
+                    }
                 }
-            ],
-            "offers": {
-                "@type": "Offer",
-                "url": "https://yourdomain.com/van-ep-mat-bintangor.html",
-                "priceCurrency": "VND",
-                "availability": "https://schema.org/InStock",
-                "priceSpecification": {
-                    "@type": "PriceSpecification",
-                    "price": "0",
-                    "priceCurrency": "VND"
-                }
-            }
+            ]
         }
     </script>
-
-
 
 
     <link rel="stylesheet" href="../../assets/css/base.css">
@@ -137,7 +166,7 @@
         <div class="container">
             <a href="../../index.html">Trang chủ</a> /
             <a href="./">Sản phẩm</a> /
-            <span>Ván ép mặt Bintangor</span>
+            <span>Ván ép mặt trắng</span>
         </div>
     </section>
 
@@ -147,38 +176,32 @@
 
             <!-- Gallery -->
             <div class="product-gallery">
-
                 <div class="gallery-wrapper">
                     <button class="gallery-btn prev">‹</button>
-
-                    <img
-                            class="product-main-image"
-                            src="../../assets/images/bintagor_1.png"
-                            alt="Ván ép mặt Bintangor">
-
+                    <img class="product-main-image"
+                         src="../../assets/images/mat_trang_1.png"
+                         alt="Ván ép  mặt trắng">
                     <button class="gallery-btn next">›</button>
                 </div>
 
                 <div class="product-thumbs">
-                    <img src="../../assets/images/bintagor_1.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_2.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_3.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_4.png" alt="Ván ép mặt Bintangor">
-                    <img src="../../assets/images/bintagor_5.png" alt="Ván ép mặt Bintangor">
+                    <img src="../../assets/images/mat_trang_1.png" alt="Ván ép mặt trắng">
+                    <img src="../../assets/images/mat_trang_2.png" alt="Ván ép mặt trắng">
+                    <img src="../../assets/images/mat_trang_3.png" alt="Ván ép mặt trắng">
+                    <img src="../../assets/images/mat_trang_4.png" alt="Ván ép mặt trắng">
+                    <img src="../../assets/images/mat_trang_5.png" alt="Ván ép mặt trắng">
                 </div>
             </div>
 
-
             <!-- Info -->
             <div class="product-info">
-                <h1>Ván ép mặt Bintangor</h1>
-                <span class="product-tag">#bintangor</span>
+                <h1>Ván ép mặt trắng</h1>
+                <span class="product-tag">#plywood</span>
 
                 <p class="product-desc">
-                    Ván ép mặt Bintangor là loại ván ép được phủ một lớp veneer Bintangor tự nhiên trên bề mặt, mang đến độ thẩm mỹ cao và khả năng chống trầy xước tốt, giúp tấm ván bền chắc và phù hợp cho nhiều ứng dụng nội thất – xây dựng
+                    Ván ép mặt trắng là loại ván ép được phủ một lớp bề mặt trắng chuyên dụng, thường dùng để tăng tính thẩm mỹ, dễ lau chùi và hạn chế bám bẩn, giúp tấm ván luôn sạch sẽ, bền màu và ứng dụng linh hoạt trong nội thất.
                 </p>
 
-                <!-- Quick specs -->
                 <div class="product-quick-spec">
 
                     <div class="spec-group">
@@ -201,10 +224,7 @@
                     <div class="spec-group">
                         <label>Độ dày</label>
                         <div class="spec-options">
-                            <button class="spec-btn">13mm – 8 lớp</button>
-                            <button class="spec-btn">15mm – 9 lớp</button>
-                            <button class="spec-btn">17mm – 11 lớp</button>
-                            <button class="spec-btn">20mm – 13 lớp</button>
+                            <button class="spec-btn">2mm – 3 lớp</button>
                             <button class="spec-btn">3mm – 3 lớp</button>
                             <button class="spec-btn">Theo yêu cầu</button>
                         </div>
@@ -232,46 +252,28 @@
     <section class="product-detail-content">
         <div class="container">
 
-            <!-- Thông số chi tiết -->
+            <!-- Thông số -->
             <div class="tab-content active" id="tab-spec">
                 <div class="product-detail-bottom">
 
                     <div class="product-spec-table">
                         <h3>Thông số kỹ thuật</h3>
                         <table>
-                            <tr>
-                                <td>Loại lõi</td>
-                                <td>Gỗ keo</td>
-                            </tr>
-                            <tr>
-                                <td>Loại keo</td>
-                                <td>Keo E2</td>
-                            </tr>
-                            <tr>
-                                <td>Dung sai độ dày</td>
-                                <td>± 0.5 mm</td>
-                            </tr>
-                            <tr>
-                                <td>Loại mặt phủ</td>
-                                <td>AA / AB / BB</td>
-                            </tr>
-                            <tr>
-                                <td>Kích thước</td>
-                                <td>1220 × 2440mm</td>
-                            </tr>
-                            <tr>
-                                <td>Độ dày</td>
-                                <td>3 – 20mm</td>
-                            </tr>
+                            <tr><td>Loại lõi</td><td>Gỗ keo</td></tr>
+                            <tr><td>Loại keo</td><td>Keo E2</td></tr>
+                            <tr><td>Dung sai độ dày</td><td>± 0.5 mm</td></tr>
+                            <tr><td>Mặt phim</td><td>AA/AB/BB</td></tr>
+                            <tr><td>Kích thước</td><td>1220 × 2440mm</td></tr>
+                            <tr><td>Độ dày</td><td>2 – 3mm</td></tr>
                             <tr>
                                 <td>Đặc điểm nổi bật</td>
                                 <td>
                                     <ul>
-                                        <li>- Độ bền cao, chịu lực tốt trong quá trình sử dụng</li>
-                                        <li>- Bề mặt ổn định, màu sắc giữ đều theo thời gian</li>
-                                        <li>- Dễ thi công, lắp đặt và gia công</li>
-                                        <li>- Khả năng chịu nhiệt ổn định</li>
-                                        <li>- Không bị ảnh hưởng bởi các hóa chất thông thường</li>
+                                        <li> – Bề mặt trắng sáng, đồng đều, dễ tạo hình và phối màu </li>
+                                        <li> – Dễ lau chùi, khó bám bẩn, giữ màu ổn định theo thời gian </li>
+                                        <li> – Kết cấu ván chắc, hạn chế cong vênh trong quá trình sử dụng </li>
+                                        <li> – Thi công đơn giản, phù hợp nhiều kiểu thiết kế nội thất </li>
+                                        <li> – Bám keo và bám phụ kiện tốt, hỗ trợ xử lý cạnh đẹp </li>
                                     </ul>
                                 </td>
                             </tr>
@@ -281,67 +283,50 @@
                     <div class="product-applications">
                         <h3>Ứng dụng thực tế</h3>
                         <div class="app-tags">
-                            <div class="app-tag">
-                                <img src="../../assets/images/ghe.png" alt="">
-                                <span>Nội thất</span>
-                            </div>
-                            <div class="app-tag">
-                                <img src="../../assets/images/tu.png" alt="">
-                                <span>Tủ kệ</span>
-                            </div>
-                            <div class="app-tag">
-                                <img src="../../assets/images/vach_ngan.png" alt="">
-                                <span>Vách ngăn</span>
-                            </div>
-                            <div class="app-tag">
-                                <img src="../../assets/images/sua_chua.png" alt="">
-                                <span>Xây dựng nhẹ</span>
-                            </div>
+                            <div class="app-tag"><img src="../../assets/images/ghe.png" alt=""><span>Giường ngủ</span></div>
+                            <div class="app-tag"><img src="../../assets/images/tu.png" alt=""><span>Tủ quần áo</span></div>
+                            <div class="app-tag"><img src="../../assets/images/sach.svg" alt=""><span>Bìa tạp chí</span></div>
+                            <div class="app-tag"><img src="../../assets/images/bang.svg" alt=""><span>Bảng viết</span></div>
                         </div>
                     </div>
 
                 </div>
             </div>
 
-            <!-- Đặc điểm chung -->
+            <!-- Đặc điểm -->
             <div class="tab-content" id="tab-feature">
-                <h2>VÁN ÉP MẶT BINTANGOR</h2>
+                <h2>VÁN ÉP MẶT TRẮNG</h2>
 
                 <p>
-                    Ván ép mặt Bintangor từ lâu đã trở thành lựa chọn quen thuộc của các xưởng nội thất, nhà máy bao bì và doanh nghiệp sản xuất đồ gỗ. Với lợi thế giá thành cạnh tranh, màu sắc ổn định, bề mặt dễ xử lý, dòng ván này mang lại sự cân bằng tốt giữa chi phí – thẩm mỹ – độ bền, đặc biệt phù hợp cho các thị trường yêu cầu số lượng lớn và mức giá tối ưu.
+                    Ván ép mặt trắng (White plywood) là dòng vật liệu mang màu sắc sáng – sạch – hiện đại, phù hợp với nội thất văn phòng, cửa hàng và công trình cần phong cách tối giản. Không giống veneer tự nhiên, mặt trắng tạo cảm giác đồng bộ và tính thẩm mỹ cao, đặc biệt được ưa chuộng trong nội thất trẻ trung.
+
                 </p>
 
-                <h3>1. Đặc điểm bề mặt của ván ép Bintangor</h3>
-                <p>
-                    Veneer Bintangor sở hữu sắc nâu đỏ tự nhiên, vân gỗ nhẹ, tạo hiệu ứng đẹp khi sơn hoặc phủ PU. Bề mặt khá “dễ tính”, không đòi hỏi nhiều công đoạn xử lý nên giúp doanh nghiệp tiết kiệm thời gian và chi phí sản xuất.
-                </p>
-                <p>
-                    Đây cũng là dòng ván có trọng lượng vừa phải, dễ cắt ghép và không làm cùn lưỡi cưa nhanh như các loại gỗ cứng.
-                </p>
-
-                <h3>2. Ưu điểm nổi bật của ván Bintangor trong sản xuất
+                <h3>1. Vì sao ván ép mặt trắng ngày càng được ưa chuộng?
                 </h3>
                 <p>
-                    Điểm mạnh của ván Bintangor nằm ở khả năng đáp ứng đa dạng nhu cầu. Dòng ván này có thể sản xuất theo nhiều tiêu chuẩn độ bền, từ keo trung bình cho bao bì đến keo chất lượng cao cho nội thất. Ván ít cong vênh, tỷ lệ lỗi mặt thấp nếu được sản xuất từ lõi gỗ keo – bạch đàn sấy kỹ.
+                    Ván mặt trắng mang lại lợi thế lớn: hiện đại, tinh gọn, dễ ứng dụng vào nhiều kiểu thiết kế. Màu sắc bền, không lo ngả màu như veneer tự nhiên. Đồng thời, bề mặt trắng giúp không gian sáng hơn, tạo cảm giác rộng rãi.
 
                 </p>
 
-                <h3>3. Vì sao doanh nghiệp nên chọn ván Bintangor trong sản xuất?
+                <h3>2. Tính năng vượt trội của ván trắng
+
                 </h3>
                 <ul>
-                    <li>- Giá thành cạnh tranh, phù hợp sản xuất số lượng lớn
-                    </li>
-                    <li>- Dễ thi công, thời gian xử lý nhanh
-                    </li>
-                    <li>- Tính thẩm mỹ ổn định, dễ sơn và phối màu
-                    </li>
-                    <li>- Nguồn cung dồi dào, phù hợp đơn hàng container
-                    </li>
-                    <li>
-                        - Đây là lựa chọn lý tưởng cho doanh nghiệp cần vật liệu ổn định, giá tốt và dễ triển khai hàng loạt.
-
-                    </li>
+                    <li>- Chống bám bẩn tốt</li>
+                    <li>- Bề mặt phẳng mịn, dễ lau chùi</li>
+                    <li>- Không cần nhiều bước hoàn thiện</li>
+                    <li>- Hỗ trợ thi công nhanh cho các dự án gấp rút</li>
                 </ul>
+                <p>
+                    Nhờ sự ổn định này, các đơn vị thi công rất ưa chuộng dòng sản phẩm này.
+                </p>
+
+                <h3>3. Lựa chọn tiêu chuẩn phù hợp cho ván mặt trắng
+                </h3>
+                <p>
+                    Tùy ứng dụng, doanh nghiệp có thể chọn giữa E0 – E1 – E2 hoặc các loại lõi keo/bạch đàn/paulownia cho mục đích tối ưu chi phí.
+                </p>
             </div>
 
         </div>
@@ -353,6 +338,13 @@
             <h3>Sản phẩm liên quan</h3>
 
             <div class="products-grid">
+
+                <a href="bintagor.html" class="product-link">
+                    <article class="product-card">
+                        <img src="../../assets/images/bintagor_1.png" alt="">
+                        <h4>Ván ép mặt Bintangor</h4>
+                    </article>
+                </a>
 
                 <a href="film-faced.html" class="product-link">
                     <article class="product-card">
@@ -368,13 +360,6 @@
                     </article>
                 </a>
 
-                <a href="white-face.html" class="product-link">
-                    <article class="product-card">
-                        <img src="../../assets/images/mat_trang_1.png" alt="">
-                        <h4>Ván ép mặt trắng</h4>
-                    </article>
-                </a>
-
                 <a href="veneer.html" class="product-link">
                     <article class="product-card">
                         <img src="../../assets/images/veneer_1.png" alt="">
@@ -387,7 +372,6 @@
     </section>
 
 </div>
-
 
 <footer class="footer-section">
     <div class="container">
