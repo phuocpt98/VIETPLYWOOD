@@ -41,7 +41,7 @@ a {
 .product-main-image {
     width: 100%;
     height: 420px;
-    object-fit: cover;     /* giữ ảnh đẹp, không méo */
+
     display: block;
     margin: 0 auto;
     background: #fff;
@@ -82,6 +82,7 @@ a {
     /*color: #555;*/
     line-height: 1.6;
     border-bottom: 2px solid #BEA48E;
+    padding-bottom: 12px;
 }
 
 /* ================== QUICK SPEC ================== */
@@ -282,6 +283,7 @@ a {
 /* ================== RELATED ================== */
 .related-products {
     margin-top: 60px;
+    padding-bottom: 40px;
 }
 
 .products-grid {
