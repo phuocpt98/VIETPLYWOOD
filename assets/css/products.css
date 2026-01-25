@@ -166,7 +166,7 @@
 }
 
 .btn-detail:hover {
-    background: #6a503c;
+    transform: translateY(-6px);
 }
 
 

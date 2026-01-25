@@ -31,60 +31,50 @@
     <script type="application/ld+json">
         {
             "@context": "https://schema.org",
-            "@type": "CollectionPage",
-            "name": "Danh mục sản phẩm ván ép VIETPLYWOOD",
-            "description": "Danh mục các dòng ván ép xuất khẩu của VIETPLYWOOD bao gồm ván ép phủ phim, Bintangor, Okoume, mặt trắng và Veneer.",
-            "url": "https://vietplywood.com/vn/products/",
-            "inLanguage": "vi-VN",
-            "isPartOf": {
-                "@type": "WebSite",
-                "name": "VIETPLYWOOD",
-                "url": "https://vietplywood.com"
-            },
-            "mainEntity": {
-                "@type": "ItemList",
-                "itemListOrder": "https://schema.org/ItemListOrderAscending",
-                "numberOfItems": 5,
-                "itemListElement": [
-                    {
-                        "@type": "ListItem",
-                        "position": 1,
-                        "name": "Ván ép phủ phim",
-                        "url": "https://vietplywood.com/vn/products/product_1.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 2,
-                        "name": "Ván ép mặt Bintangor",
-                        "url": "https://vietplywood.com/vn/products/product_2.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 3,
-                        "name": "Ván ép mặt Okoume",
-                        "url": "https://vietplywood.com/vn/products/product_3.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 4,
-                        "name": "Ván ép mặt trắng",
-                        "url": "https://vietplywood.com/vn/products/product_4.html"
-                    },
-                    {
-                        "@type": "ListItem",
-                        "position": 5,
-                        "name": "Ván ép mặt xoan Veneer",
-                        "url": "https://vietplywood.com/vn/products/product_5.html"
+            "@graph": [
+                {
+                    "@type": "Organization",
+                    "@id": "https://vietplywood.vn/#organization",
+                    "name": "VietPlywood",
+                    "url": "https://vietplywood.vn/",
+                    "logo": "https://vietplywood.vn/assets/images/logo.png",
+                    "description": "VietPlywood cung cấp ván ép chất lượng cao đạt tiêu chuẩn xuất khẩu, phục vụ sản xuất và xây dựng quy mô lớn.",
+                    "sameAs": [
+                        "https://www.facebook.com/",
+                        "https://www.linkedin.com/"
+                    ],
+                    "contactPoint": {
+                        "@type": "ContactPoint",
+                        "contactType": "Sales",
+                        "availableLanguage": ["vi", "en"]
                     }
-                ]
-            },
-            "about": {
-                "@type": "Organization",
-                "name": "VIETPLYWOOD",
-                "logo": "https://vietplywood.com/assets/images/logo.svg"
-            }
+                },
+                {
+                    "@type": "WebSite",
+                    "@id": "https://vietplywood.vn/#website",
+                    "url": "https://vietplywood.vn/",
+                    "name": "VietPlywood",
+                    "publisher": {
+                        "@id": "https://vietplywood.vn/#organization"
+                    }
+                },
+                {
+                    "@type": "WebPage",
+                    "@id": "https://vietplywood.vn/#webpage",
+                    "url": "https://vietplywood.vn/",
+                    "name": "VietPlywood – Nền tảng ván ép cho tương lai",
+                    "description": "Cung cấp ván ép tiêu chuẩn xuất khẩu, tối ưu kết cấu bền bỉ, đáp ứng phát triển bền vững cho thị trường trong nước và quốc tế.",
+                    "isPartOf": {
+                        "@id": "https://vietplywood.vn/#website"
+                    },
+                    "about": {
+                        "@id": "https://vietplywood.vn/#organization"
+                    }
+                }
+            ]
         }
     </script>
+
 
 
 
@@ -105,9 +95,9 @@
             <ul class="nav-links" id="navLinks">
                 <li><a href="../../" >Trang chủ</a></li>
                 <li><a href="../catalog/" >Catalog</a></li>
-                <li><a href="#" class="active">Sản phẩm</a></li>
+                <li><a href="../products/" >Sản phẩm</a></li>
                 <li><a href="../blogs/">Blog</a></li>
-                <li><a href="../about/">Về chúng tôi</a></li>
+                <li><a href="#" class="active">Về chúng tôi</a></li>
                 <li><a href="../contact/">Báo giá</a></li>
             </ul>
 
@@ -134,48 +124,51 @@
     <!-- HERO -->
     <section class="home-hero">
         <div class="container">
-            <div class="hero-box">
-                <div class="hero-content">
-                    <h1>Kiến tạo Nền tảng cho<br> Tương lai</h1>
-                    <p>
-                        Cung cấp ván ép chất lượng cao, đạt tiêu chuẩn xuất khẩu.<br>
-                        Đáp ứng ổn định cho sản xuất và xây dựng quy mô lớn.
-                    </p>
+            <div class="hero-about">
+                <div class="hero-box">
+                    <div class="hero-content">
+                        <h1>Kiến tạo <span class ='font-color-linear'>Nền tảng</span> cho<br> Tương lai</h1>
+                        <p>
+                            Cung cấp ván ép chất lượng cao, đạt tiêu chuẩn xuất khẩu.<br>
+                            Đáp ứng ổn định cho sản xuất và xây dựng quy mô lớn.
+                        </p>
 
-                    <div class="hero-actions">
-                        <a href="#" class="btn-secondary">Tải Catalog</a>
-                        <a href="../contact/" class="btn-primary">Liên hệ chúng tôi</a>
+                        <div class="hero-actions">
+                            <a href="../../assets/files/catalog_vn.pdf" download class="btn-hero btn-catalog-hero">Tải Catalog</a>
+                            <a href="../contact/" class="btn-hero btn-contact-hero">Liên hệ chúng tôi</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <strong>7+</strong>
+                        <span>Năm kinh nghiệm</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>2M+</strong>
+                        <span>Đã được cung ứng</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>10+</strong>
+                        <span>Quốc gia phục vụ</span>
+                    </div>
+                    <div class="stat-item">
+                        <strong>24 Hr</strong>
+                        <span>Tư vấn & báo giá</span>
                     </div>
                 </div>
             </div>
 
-            <div class="hero-stats">
-                <div class="stat-item">
-                    <strong>7+</strong>
-                    <span>Năm kinh nghiệm</span>
-                </div>
-                <div class="stat-item">
-                    <strong>2M+</strong>
-                    <span>Đã được cung ứng</span>
-                </div>
-                <div class="stat-item">
-                    <strong>10+</strong>
-                    <span>Quốc gia phục vụ</span>
-                </div>
-                <div class="stat-item">
-                    <strong>24 Hr</strong>
-                    <span>Tư vấn & báo giá</span>
-                </div>
-            </div>
         </div>
     </section>
 
     <!-- SỨ MỆNH -->
     <section class="home-section mission">
         <div class="container two-col">
-            <div class="col text">
-                <span class="section-tag">SỨ MỆNH</span>
-                <h2>Tối ưu kết cấu bền bỉ,<br> đáp ứng phát triển bền vững</h2>
+            <div class="col text col-text">
+                <span class="section-tag">  <img src="../../assets/images/icon_success.svg" alt=""> SỨ MỆNH</span>
+                <h2>Tối ưu kết cấu <span class="section-highlight">bền bỉ</span>,<br> đáp ứng phát triển bền vững</h2>
                 <p>
                     Chúng tôi không chỉ sản xuất ván ép, mà còn cung cấp nền tảng
                     kết cấu đáp ứng yêu cầu của xây dựng hiện đại. Từ nhà ở dân dụng
@@ -191,13 +184,13 @@
 
     <!-- TẦM NHÌN -->
     <section class="home-section vision">
-        <div class="container two-col reverse">
+        <div class="container two-col">
             <div class="col image">
                 <img src="../../assets/images/about_2.png" alt="Hệ thống nhà máy">
             </div>
-            <div class="col text">
-                <span class="section-tag">TẦM NHÌN</span>
-                <h2>Chuẩn hóa chất lượng,<br> mở rộng giá trị thị trường</h2>
+            <div class="col text col-text">
+                <span class="section-tag">  <img src="../../assets/images/icon_success.svg" alt=""> TẦM NHÌN</span>
+                <h2>Chuẩn hóa <span class="section-highlight">chất lượng</span>,<br> mở rộng giá trị thị trường</h2>
                 <p>
                     Chúng tôi hướng tới trở thành nhà cung cấp ván ép tiêu chuẩn
                     hàng đầu, mở rộng thị trường quốc tế nhờ chất lượng ổn định,
@@ -211,60 +204,66 @@
     <!-- LÝ DO LỰA CHỌN -->
     <section class="home-advantages">
         <div class="container">
-            <h2>Lựa chọn VietPlywood</h2>
-            <p class="section-desc">
-                Chúng tôi kết hợp kinh nghiệm sản xuất thực tiễn với công nghệ hiện đại
-                để cung cấp các giải pháp ván ép chất lượng cao, ổn định và phù hợp
-                cho sản xuất công nghiệp.
-            </p>
+            <div class="section-top">
+                <h2>Lựa chọn VietPlywood</h2>
+                <p class="section-desc">
 
-            <div class="advantage-grid">
-                <div class="advantage-card">
-                    <div class="icon"></div>
-                    <h3>Chi phí tối ưu</h3>
-                    <p>
-                        Tối ưu giá thành từ nguyên liệu đến sản xuất, giúp doanh nghiệp
-                        tiết kiệm chi phí và giảm rủi ro chuỗi cung ứng.
-                    </p>
-                </div>
+                    Chúng tôi kết hợp kinh nghiệm sản xuất thực tiễn với công nghệ hiện đại
+                    để cung cấp các giải pháp ván ép chất lượng cao, ổn định và phù hợp
+                    cho sản xuất công nghiệp.
+                </p>
 
-                <div class="advantage-card">
-                    <div class="icon"></div>
-                    <h3>Chất lượng ổn định</h3>
-                    <p>
-                        Ván ép được kiểm soát nghiêm ngặt từ nguyên liệu đến thành phẩm,
-                        quy trình chuẩn hóa, đáp ứng tiêu chuẩn kỹ thuật của thị trường.
-                    </p>
-                </div>
+                <div class="advantage-grid">
+                    <div class="advantage-card">
+                        <div class="icon"><img src="../../assets/images/about_cat_thong.svg" alt=""> </div>
+                        <h3>Chi phí tối ưu</h3>
+                        <p>
+                            Vị trí gần vùng nguyên liệu giúp tối ưu
+                            giá thành; đội ngũ tư vấn hỗ trợ giải
+                            pháp tiết kiệm chi phí, giảm rủi ro
+                            chuỗi cung ứng.
 
-                <div class="advantage-card">
-                    <div class="icon"></div>
-                    <h3>Sản xuất chủ động</h3>
-                    <p>
-                        Nhà máy chủ động nguồn cung, đáp ứng đơn hàng container,
-                        đảm bảo tiến độ giao hàng cho doanh nghiệp và dự án lớn.
-                    </p>
+                        </p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="icon"><img src="../../assets/images/about_sua_chua.svg" alt=""> </div>
+                        <h3>Chất lượng ổn định</h3>
+                        <p>
+                            Ván ép được kiểm soát nghiêm ngặt từ
+                            nguyên liệu đến thành phẩm, quy trình
+                            chuẩn hóa, đáp ứng tiêu chuẩn kỹ thuật
+                            của thị trường.
+
+                        </p>
+                    </div>
+
+                    <div class="advantage-card">
+                        <div class="icon"><img src="../../assets/images/about_trai_dat.svg" alt=""> </div>
+                        <h3>Sản xuất chủ động</h3>
+                        <p>
+                            Nhà máy chủ động nguồn cung, đáp ứng
+                            đơn hàng container, đảm bảo tiến độ giao
+                            hàng cho doanh nghiệp và các dự án lớn.
+
+                        </p>
+                    </div>
                 </div>
             </div>
-        </div>
-    </section>
 
-    <!-- CTA -->
-    <section class="home-cta">
-        <div class="container">
             <div class="cta-box">
                 <h2>Sẵn sàng hợp tác bền vững?</h2>
                 <p>
                     Hợp tác cùng VietPlywood để đảm bảo nguồn cung ổn định
-                    và ván ép chất lượng cao. Yêu cầu báo giá riêng cho đơn hàng của bạn.
+                    và ván ép chất lượng cao.</br>Yêu cầu báo giá riêng cho đơn hàng của bạn.
                 </p>
                 <div class="cta-actions">
-                    <a href="../contact/" class="btn-primary">Yêu cầu báo giá</a>
-                    <a href="../contact/" class="btn-outline">Liên hệ chúng tôi</a>
+                    <a href="../contact/" >Yêu cầu báo giá</a>
                 </div>
             </div>
         </div>
     </section>
+
 
 </div>
 
@@ -323,7 +322,7 @@
         <div class="footer-bottom">
             <p class="copyright">© 2023 PlyMaster B2B Inc. All rights reserved.</p>
             <div class="footer-social">
-                <a href="https://www.linkedin.com/in/phan-tien-phuoc-a49934321/" target="_blank" rel="noopener noreferrer">
+                <a href="https://www.linkedin.com/in/viet-plywood-company/" target="_blank" rel="noopener noreferrer">
                     <i class="fa-brands fa-linkedin"></i>
                 </a>
                 <a href="https://www.facebook.com/profile.php?id=61584549586039" target="_blank" rel="noopener noreferrer">

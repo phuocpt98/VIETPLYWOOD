@@ -100,7 +100,7 @@ a { text-decoration: none; color: inherit; }
 .footer-social a { color: #A3968C; font-size: 1.1rem; }
 
 .body-page{
-    padding: 20px;
+    /*padding: 20px;*/
 
     background: linear-gradient(
             180deg,
