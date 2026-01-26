@@ -90,7 +90,7 @@ function renderPosts() {
 
     blogList.innerHTML = posts.map(post => `
         <article class="blog-card">
-            <img src="${post.image}" class="blog-thumb" alt="${post.title}">
+            <a href="${post.url}" class="blog-link"><img src="${post.image}" class="blog-thumb" alt="${post.title}"></a>
             <div class="blog-content">
                 <time class="blog-date">${formatDate(post.date)}</time>
                 <h3 class="blog-title">${post.title}</h3>
