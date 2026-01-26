@@ -20,7 +20,7 @@
     padding: 48px 40px;
     color: #fff;
     position: relative;
-    background: linear-gradient(to right, rgb(110 85 65 / 0%), rgb(140 110 85 / 73%)), url(../../assets/images/about_background.png);
+    background: url(../../assets/images/about_background.png);
     background-size: cover;
     margin: 0 auto 50px;
     border-radius: 16px;
