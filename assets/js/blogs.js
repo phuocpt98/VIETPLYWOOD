@@ -1,6 +1,4 @@
-
-
-const POSTS = [
+const POSTS_VN = [
     {
         "id": 1,
         "title": "Dự báo giá Ván Ép Phủ Phim 2026 – Chiến lược Sống còn cho Nhà thầu",
@@ -75,6 +73,100 @@ const POSTS = [
     }
 ];
 
+const POSTS_EN = [
+    {
+        "id": 1,
+        "title": "Film Faced Plywood Price Forecast 2026 – Survival Strategy for Contractors",
+        "excerpt": "Plywood price 2026, construction plywood market, building material trends, plywood logistics costs, material price risk management.",
+        "date": "2025-03-15",
+        "image": "../../assets/images/blog_1.png",
+        "url": "./blog_1.html"
+    },
+    {
+        "id": 2,
+        "title": "Film Faced Plywood for Cold Storage – Moisture Resistance & Maintenance Savings",
+        "excerpt": "Cold storage plywood, cold storage construction, moisture resistant plywood, cold storage mezzanine floor, preventing plywood warping.",
+        "date": "2025-04-15",
+        "image": "../../assets/images/blog_2.png",
+        "url": "./blog_2.html"
+    },
+    {
+        "id": 3,
+        "title": "Standard Weight of 18mm Film Faced Plywood – Checking Tips to Avoid Fraud",
+        "excerpt": "18mm plywood weight, formwork plywood specs, 18mm plywood, checking plywood quality by weight, calculating plywood weight.",
+        "date": "2025-05-15",
+        "image": "../../assets/images/blog_3.png",
+        "url": "./blog_3.html"
+    },
+    {
+        "id": 4,
+        "title": "Tips for Negotiating Film Faced Plywood Prices to Optimize Cash Flow",
+        "excerpt": "Ha Nam plywood quote 2026, film faced plywood price, buying plywood, plywood price negotiation tips.",
+        "date": "2025-06-15",
+        "image": "../../assets/images/blog_4.png",
+        "url": "./blog_4.html"
+    },
+    {
+        "id": 5,
+        "title": "Demand for Film Faced Plywood in 2026: Public Investment and FDI Wave",
+        "excerpt": "Plywood demand 2026, construction plywood market, film faced plywood for FDI projects, high-quality plywood usage trends.",
+        "date": "2025-07-15",
+        "image": "../../assets/images/blog_5.png",
+        "url": "./blog_5.html"
+    },
+    {
+        "id": 6,
+        "title": "Heavy-Duty Film Faced Plywood for Machinery Area Floor Protection",
+        "excerpt": "Machinery floor lining, heavy-duty film faced plywood, machinery dunnage, factory floor protection, plywood vs steel plates for floor protection.",
+        "date": "2025-08-15",
+        "image": "../../assets/images/blog_6.png",
+        "url": "./blog_6.html"
+    },
+    {
+        "id": 7,
+        "title": "Film Faced Plywood Reduced Formwork Costs by 32% in an Industrial Zone Project",
+        "excerpt": "Formwork cost reduction, cost-optimized film faced plywood, industrial zone plywood case study, formwork material management, cost per square meter usage.",
+        "date": "2025-09-15",
+        "image": "../../assets/images/blog_7.png",
+        "url": "./blog_7.html"
+    },
+    {
+        "id": 8,
+        "title": "Is Film Faced Plywood Suitable for Mezzanine Flooring?",
+        "excerpt": "Film faced plywood for mezzanine, low-cost mezzanine flooring, plywood vs Cemboard comparison, fast mezzanine construction.",
+        "date": "2025-10-15",
+        "image": "../../assets/images/blog_8.png",
+        "url": "./blog_8.html"
+    },
+    {
+        "id": 9,
+        "title": "How Much Does 15mm Film Faced Plywood Weigh? Specifications & Detailed Calculation",
+        "excerpt": "15mm plywood weight, 15mm plywood specifications, how to check under-thickness plywood, 15mm plywood for formwork.",
+        "date": "2025-11-15",
+        "image": "../../assets/images/blog_9.png",
+        "url": "./blog_9.html"
+    }
+];
+
+/* ================= CONFIG LANG ================= */
+const langEl = document.getElementById("currentLang");
+const currentLang = langEl ? langEl.innerText.trim() : "VN";
+
+const POSTS = currentLang === "EN" ? POSTS_EN : POSTS_VN;
+
+const TEXTS = {
+    VN: {
+        readMore: "Đọc thêm →",
+        locale: "vi-VN"
+    },
+    EN: {
+        readMore: "Read more →",
+        locale: "en-US"
+    }
+};
+
+const T = TEXTS[currentLang] || TEXTS.VN;
+
 const POSTS_PER_PAGE = 3;
 let currentPage = 1;
 
@@ -95,7 +187,7 @@ function renderPosts() {
                 <time class="blog-date">${formatDate(post.date)}</time>
                 <h3 class="blog-title">${post.title}</h3>
                 <p class="blog-excerpt">${post.excerpt}</p>
-                <a href="${post.url}" class="blog-link">Đọc thêm →</a>
+                <a href="${post.url}" class="blog-link">${T.readMore}</a>
             </div>
         </article>
     `).join("");
@@ -129,7 +221,7 @@ function goToPage(page) {
 }
 
 function formatDate(date) {
-    return new Date(date).toLocaleDateString("vi-VN");
+    return new Date(date).toLocaleDateString(T.locale);
 }
 
 /* INIT */
